@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom'
 
 ReactDOM.render(
   <>
-     hi
+     hi 2
   </>,
   document.getElementById('app')
 )
