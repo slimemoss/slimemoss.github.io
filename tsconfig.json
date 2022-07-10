@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2021",
+    "module": "es2020",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2021",
+      "dom"
+    ]
+  },
+  "include": ["./src/index.d.ts"]
+}
