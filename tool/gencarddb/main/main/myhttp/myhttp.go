@@ -109,10 +109,12 @@ func Get(url string) (*http.Response, error) {
 	cli.RetryMax = 100
 	cli.Logger = nil
 	cli.CheckRetry = func(ctx context.Context, resp *http.Response, err error) (bool, error) {
-		if b, err := retryablehttp.DefaultRetryPolicy(ctx, resp, err); !b {
-			return b, err
+		if resp != nil {
+			if resp.StatusCode != 200 {
+				return true, nil
+			}
 		}
-		return resp.StatusCode != 200, err
+		return retryablehttp.DefaultRetryPolicy(ctx, resp, err)
 	}
 
 	return cli.Get(url)
