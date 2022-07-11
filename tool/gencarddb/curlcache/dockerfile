@@ -1,0 +1,7 @@
+FROM golang:1.16.9-alpine
+
+COPY main /main
+WORKDIR /main
+
+CMD go run run.go
+EXPOSE 80

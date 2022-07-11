@@ -1,9 +1,10 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import { CardSearch02Page } from './card_search/CardSearch02'
 
 ReactDOM.render(
   <>
-     hi 2
+    <CardSearch02Page/>
   </>,
   document.getElementById('app')
 )

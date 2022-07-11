@@ -1,2 +1,7 @@
 # slimemoss.github.io
-test2
+## ローカルでの実行
+```
+npm run start
+```
+
+[](http://localhost:8080/) でアクセス

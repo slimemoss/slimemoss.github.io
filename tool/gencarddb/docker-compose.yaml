@@ -1,0 +1,17 @@
+version: '3'
+services:
+  main:
+    build: ./main
+    volumes:
+      - ./out:/main/out
+  curljs:
+    build: ./curljs
+    tty: true
+    deploy:
+      mode: replicated
+      replicas: 6
+  curlcache:
+    build: ./curlcache
+    tty: true
+    volumes:
+      - ./cache/curlcache:/cachedir

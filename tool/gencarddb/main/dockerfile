@@ -1,0 +1,12 @@
+FROM golang:1.16-rc-alpine3.12
+
+RUN apk add --no-cache alpine-sdk build-base
+
+COPY main/go.mod /main/go.mod
+WORKDIR /main
+RUN go mod download
+
+COPY main /main
+
+CMD go run run.go
+EXPOSE 80

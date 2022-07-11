@@ -1,0 +1,4972 @@
+<html><script src="https://connect.facebook.net/ja_JP/sdk.js?hash=e710c9c5e8d4d05d58e0a400717bf614" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&amp;version=v2.9"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PWR3GWF"></script><script type="text/javascript" id="__gaOptOutExtension">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head>
+
+
+
+	
+
+	
+	<meta http-equiv="x-ua-compatible" content="IE=10">
+	<meta http-equiv="x-ua-compatible" content="IE=EmulateIE10">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Language" content="ja">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="imagetoolbar" content="no">
+
+	<meta property="og:site_name" content="遊戯王OCGカードデータベース">
+
+	<meta property="og:image" content="http://www.db.yugioh-card.com/sns/logo_ocg_f.png">
+	<meta property="og:type" content="product">
+	<meta property="og:locale" content="ja_JP">
+
+	<meta name="twitter:card" content="summary">
+
+	<meta name="twitter:image" content="http://www.db.yugioh-card.com/sns/logo_ocg_t.png">
+	<script type="text/javascript" src="/yugiohdb/ga.js"></script>
+	<meta name="copyright" content="KONAMI">
+	<link rel="shortcut icon" href="external/image/yugioh.ico">
+	<link rel="apple-touch-icon" href="external/image/apple-touch-icon.png">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+	
+
+
+	
+
+
+	
+
+
+	
+	
+	
+	<meta name="keywords" content=" Vol.1 | カード検索結果（画像表示） | 遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース 遊戯王,デッキ,デュエルモンスターズ,VRAINS,ヴレインズ,禁止,制限,パック,禁止カード,カード,カードリスト,ルール,OCG,コナミ,KONAMI">
+	<meta name="description" content="遊戯王OCG「Vol.1」のカード一覧です。遊戯王OCGカードデータベースは、遊戯王 オフィシャルカードゲーム デュエルモンスターズのコナミ公式サイトです。">
+
+	<meta property="og:title" content=" Vol.1 | カード検索結果（画像表示） | 遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース">
+	<meta property="og:url" content="http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja">
+
+	<meta property="og:description" content="遊戯王OCG「Vol.1」のカード一覧です。遊戯王OCGカードデータベースは、遊戯王 オフィシャルカードゲーム デュエルモンスターズのコナミ公式サイトです。">
+
+	<meta name="twitter:title" content=" Vol.1 | カード検索結果（画像表示） | 遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース">
+	<meta name="twitter:description" content=" 遊戯王OCG「Vol.1」のカード一覧です。遊戯王OCGカードデータベースは、遊戯王 オフィシャルカードゲーム デュエルモンスターズのコナミ公式サイトです。">
+
+	<meta name="twitter:url" content="http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja">
+
+
+
+
+	
+
+<title>Vol.1 | カード検索結果（画像表示） | 遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース</title>
+
+
+
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="external/html5/js/html5shiv.js"></script>
+<![endif]-->
+	<script type="text/javascript" src="external/jquery/jquery-3.6.0.js"></script>
+
+	<script type="text/javascript" src="external/jquery/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+
+	<script type="text/javascript" src="external/js/common.js"></script>
+
+	<script type="text/javascript" src="external/jquery/scrolltopcontrol.js"></script>
+
+
+
+
+
+	<!--link type="text/css" rel="stylesheet" href="external/jquery/jquery-ui-1.8.16.custom/css/ui-lightness/jquery-ui-1.8.16.custom.css"-->
+	<link type="text/css" rel="stylesheet" href="external/jquery/jquery-ui-1.13.1.custom/jquery-ui.css">
+
+	<link type="text/css" rel="stylesheet" href="external/css/common.css?20171030">
+
+	<link rel="stylesheet" type="text/css" href="external/css/CardResultNormal.css">
+
+	<script type="text/javascript">
+	<!--
+
+	$(function() {
+		
+
+		$('#sort').val('1');
+		$('#rp').val('99999');
+		$('#mode').val('1');
+
+		$('#sort').change(function() {
+			var value = $(this).val();
+			theme: 'sort_ja',
+
+				
+				location.href = '/yugiohdb/card_search.action'
+					+ '?ope=1'
+					+ '&sess=2'
+					
+					+ '&pid=1101000'
+					
+					+ '&sort=' + encodeURIComponent($('#sort').val())
+					+ '&page=1'
+					+ '&stype=1&othercon=2&rp=99999';
+
+		});
+
+		$('#mode').change(function() {
+			var value = $(this).val();
+			theme: 'mode_ja',
+
+				
+				location.href = '/yugiohdb/card_search.action'
+							+ '?ope=1'
+							+ '&sess=4'
+							
+							+ '&pid=1101000'
+							
+							+ '&mode=' + value
+							+ '&stype=1&othercon=2&rp=99999&page=1';
+
+		});
+		$('#mode_set li.1').addClass("now");
+		$('#mode_set li').click(function(){
+			$('.tablink li').removeClass("now");
+			clm = $(this).attr("class");
+
+			$('#mode').val(clm);
+			$('#mode').trigger('change');
+		});
+
+		
+
+	
+		$('#card_image_0_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4009&ciid=1&enc=0CoTPLoT9T5vYevmPPEIVw').show();
+	
+
+	
+		$('#card_image_1_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4041&ciid=1&enc=Bq8Eng_-TFl8cWEum1rpdw').show();
+	
+
+	
+		$('#card_image_2_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4044&ciid=1&enc=gcAVxqWH8Pmf7O2WyTpN3A').show();
+	
+
+	
+		$('#card_image_3_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4065&ciid=1&enc=RdXXykm3XpWb0kdBLLrsdQ').show();
+	
+
+	
+		$('#card_image_4_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4071&ciid=1&enc=Awzq09xKAEF6IVNf1d6Jxw').show();
+	
+
+	
+		$('#card_image_5_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4110&ciid=1&enc=Eg4K3tlV9ZGK_1hbFgex8A').show();
+	
+
+	
+		$('#card_image_6_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4111&ciid=1&enc=Yoh7S1jeJzT_48-ce5-6_g').show();
+	
+
+	
+		$('#card_image_7_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4119&ciid=1&enc=q7NwJlOwa7N9NHGu5Cjf5g').show();
+	
+
+	
+		$('#card_image_8_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4135&ciid=1&enc=Hc3rr1ATnu8WYqrAMGs-pw').show();
+	
+
+	
+		$('#card_image_9_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4141&ciid=1&enc=5lSWqWQHcCr-GKUcFEiiFw').show();
+	
+
+	
+		$('#card_image_10_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4160&ciid=1&enc=EpylVyTscUZ2NGUP7BkZYg').show();
+	
+
+	
+		$('#card_image_11_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4163&ciid=1&enc=9DTWZnKnF57i5AWg4m1vvQ').show();
+	
+
+	
+		$('#card_image_12_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4191&ciid=1&enc=palxxqYMzyiIdIaIQKOwWw').show();
+	
+
+	
+		$('#card_image_13_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4197&ciid=1&enc=iI92-CRFr3l0o14yNjOjAA').show();
+	
+
+	
+		$('#card_image_14_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4206&ciid=1&enc=oGMyBLx7q18-XKWsoO8Ipw').show();
+	
+
+	
+		$('#card_image_15_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4208&ciid=1&enc=qSSlu9swS_9C_FuxakD1aw').show();
+	
+
+	
+		$('#card_image_16_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4214&ciid=1&enc=SEWyvCkOlgpLLlkmv1N34g').show();
+	
+
+	
+		$('#card_image_17_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4215&ciid=1&enc=rEuO3-KQ0CsHFDcxc1d1zQ').show();
+	
+
+	
+		$('#card_image_18_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4217&ciid=1&enc=8C8kPZ1QtvwaPerEJEvaHA').show();
+	
+
+	
+		$('#card_image_19_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4218&ciid=1&enc=ONulCg3eWMz_BElylVBQ4g').show();
+	
+
+	
+		$('#card_image_20_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4220&ciid=1&enc=Jz5K8_S5o5KJ5SRFvq3ZIQ').show();
+	
+
+	
+		$('#card_image_21_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4233&ciid=1&enc=4l1ga_mBglhLLglo6TjsVw').show();
+	
+
+	
+		$('#card_image_22_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4235&ciid=1&enc=upnsByvzomasI16ka2vOYg').show();
+	
+
+	
+		$('#card_image_23_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4243&ciid=1&enc=iWWYxdQByfc6JAAdXaA0Ag').show();
+	
+
+	
+		$('#card_image_24_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4246&ciid=1&enc=w-UckrF5JRjjZTNbPrqNBQ').show();
+	
+
+	
+		$('#card_image_25_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4248&ciid=1&enc=eaEE4Wk5Z4oSmu7WPw3nlA').show();
+	
+
+	
+		$('#card_image_26_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4267&ciid=1&enc=fwVMS5TUN8icxAdPljrtAA').show();
+	
+
+	
+		$('#card_image_27_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4271&ciid=1&enc=bEjaUhhvxwug8Rm-8yFHOA').show();
+	
+
+	
+		$('#card_image_28_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4274&ciid=1&enc=0ZoLn9ctdL1auzMtivSUbA').show();
+	
+
+	
+		$('#card_image_29_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4306&ciid=1&enc=rTqyToPmBSCzgPEloNtCSA').show();
+	
+
+	
+		$('#card_image_30_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4307&ciid=1&enc=y23qHw5GAf5XemUaVzP6bQ').show();
+	
+
+	
+		$('#card_image_31_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4314&ciid=1&enc=ls7Aed9J3NL-RMcZXL98Gg').show();
+	
+
+	
+		$('#card_image_32_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4328&ciid=1&enc=l0xBijUQSGvRnHS80N6AnQ').show();
+	
+
+	
+		$('#card_image_33_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4329&ciid=1&enc=IZuyMMLE4hCCOXQMGKtgOw').show();
+	
+
+	
+		$('#card_image_34_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4334&ciid=1&enc=OBlL7uhh3R3TS1NmLovG_w').show();
+	
+
+	
+		$('#card_image_35_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4342&ciid=1&enc=swxbopKDM2q5ZlRjatRuaw').show();
+	
+
+	
+		$('#card_image_36_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4345&ciid=1&enc=mP11HY8E7DvHtgwJjoAD-A').show();
+	
+
+	
+		$('#card_image_37_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4349&ciid=1&enc=690IyKhxV20mAl3Yd-_-rw').show();
+	
+
+	
+		$('#card_image_38_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4835&ciid=1&enc=Vl0PfBZKgOVDdaGH6N_LDw').show();
+	
+
+	
+		$('#card_image_39_1').attr('src', '/yugiohdb/get_image.action?type=1&osplang=1&cid=4836&ciid=1&enc=Bi0DupNPw3Sf5ieiKdoM9A').show();
+	
+
+
+		
+		$('.t_row').click(function() {
+			window.open($('.link_value', this).val());
+			return false
+		});
+
+
+
+
+	});
+
+	
+	function ChangePage(page) {
+		location.href = '/yugiohdb/card_search.action'
+					+ '?ope=1'
+					+ '&sess=3'
+					+ '&page=' + page
+					+ '&stype=1&othercon=2&rp=99999';
+	}
+
+	</script>
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+
+
+
+	
+
+<body class="ja">
+
+<div id="wrapper">
+	<header>
+		<div id="header_meta">
+			<a href="https://www.konami.com/games/jp/ja/" target="_blank"><img src="http://www.yugioh-card.com/ci/logo/konami_logo_normal.png" alt="KONAMI" id="konami" class="ui-draggable ui-draggable-handle" style="position: relative;"></a>
+
+			<nav id="language">
+				<span class="hex2_1 orn"><span class="hex2_2">
+					日本語
+					
+					
+					
+					
+					
+			 		
+			 		
+				</span></span>
+				<ul>
+					<li><a href="javascript:ChangeLanguage('ja')" class="current">日本語</a></li>
+					<li><a href="javascript:ChangeLanguage('en')">English</a></li>
+					<li><a href="javascript:ChangeLanguage('de')">Deutsch</a></li>
+					<li><a href="javascript:ChangeLanguage('fr')">Français</a></li>
+					<li><a href="javascript:ChangeLanguage('it')">Italiano</a></li>
+					<li><a href="javascript:ChangeLanguage('es')">Español</a></li>
+					<li><a href="javascript:ChangeLanguage('pt')">Portugues</a></li>
+					<li><a href="javascript:ChangeLanguage('ko')">한글</a></li>
+				</ul>
+			</nav>
+
+		</div><!--#header_meta-->
+
+
+		<div id="header_menu">
+			<nav>
+				<dl id="menber_menu">
+	
+					<dd class="rogout">
+						
+						<a class="btn hex orn" href="https://my.konami.net/index.html"><span>新規登録</span></a>
+						
+						<a class="btn hex my" href="/yugiohdb/member_login.action"><span>ログイン</span></a>
+					</dd>
+	
+	
+					<dd class="logo"></dd>
+					
+					<dd class="forbidden_limited">
+						<a class="btn hex pnk" href="/yugiohdb/forbidden_limited.action">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 35.32"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M26.09,16v3.57a10.85,10.85,0,0,0,.16-1.8A10.5,10.5,0,0,0,26.09,16Zm0,17.94H18a17,17,0,0,1-5.6,0H4.15V30a17.58,17.58,0,0,1-1.37-1.36v6.67H27.46V28.8a17.2,17.2,0,0,1-1.37,1.33ZM23.35,23.08V13.74L22,15.1v6.62H15.26l-1.37,1.36ZM4.15,1.35H26.09V5.44a14.34,14.34,0,0,1,1.37,1.33V0H2.78V6.93A17.71,17.71,0,0,1,4.15,5.56Zm0,16.83v0ZM8.26,9.25a10.62,10.62,0,0,0-1.38,1.3V22.36L8.26,21Zm6.92,23.58A15,15,0,1,0,0,17.83a15,15,0,0,0,15.19,15Zm12.54-15A12.56,12.56,0,0,1,7.47,27.55L25.06,10.13a12.29,12.29,0,0,1,2.67,7.65ZM15.19,5.37a12.54,12.54,0,0,1,8,2.82L5.5,25.65a12.3,12.3,0,0,1-2.84-7.87A12.47,12.47,0,0,1,15.19,5.37Z" transform="translate(0.01)"></path></svg>
+								<h3>リミットレギュレーション</h3>
+								
+							</span>
+						</a>
+					</dd>
+				</dl><!--#menber_menu-->
+				<div class="bottom">
+					<div id="spnav_btn" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.59 31"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M2.63,0H39a2.64,2.64,0,0,1,2.64,2.63h0A2.63,2.63,0,0,1,39,5.26H2.63A2.63,2.63,0,0,1,0,2.63H0A2.63,2.63,0,0,1,2.63,0Z"></path><path class="a" d="M2.63,12.87H39a2.64,2.64,0,0,1,2.64,2.63h0A2.64,2.64,0,0,1,39,18.13H2.63A2.63,2.63,0,0,1,0,15.5H0A2.63,2.63,0,0,1,2.63,12.87Z"></path><path class="a" d="M2.63,25.74H39a2.63,2.63,0,0,1,2.64,2.63h0A2.64,2.64,0,0,1,39,31H2.63A2.63,2.63,0,0,1,0,28.37H0A2.63,2.63,0,0,1,2.63,25.74Z"></path></svg></div>
+					
+
+
+				<ul class="main_menu">
+					
+					<li class="menu_top"><a href="/yugiohdb/"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.8px" height="33.7px" viewBox="0 0 42.8 33.7" style="enable-background:new 0 0 42.8 33.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M21.4,11.6c-3.9,0-7,3.2-6.9,7.1s3.2,7,7.1,6.9c3.8,0,6.9-3.2,6.9-7C28.5,14.7,25.3,11.6,21.4,11.6
+	C21.5,11.6,21.4,11.6,21.4,11.6z M23.4,0h-3.9L0,18l3.5,3.7l4.5-4.2l3,16.2h20.6l3-16.2l4.5,4.2l3.5-3.8L23.4,0z"></path>
+</svg>
+<h3>Top</h3></a></li>
+
+					
+					<li class="menu_card_search">
+						<a class="main" href="/yugiohdb/card_search.action"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41.81 40.37"><defs><style>.a{fill:url(#a);}</style><linearGradient id="a" x1="2.97" y1="24.1" x2="44.78" y2="24.1" gradientTransform="matrix(1, 0, 0, -1, 0, 46)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path class="a" d="M23.54,39.8l-19-2.53,3.9-28.8,5.92.79A12.89,12.89,0,0,1,15,8l-7.73-1L3,38.44l21.75,2.89,1.6-11.79c-.46-.05-.91-.12-1.36-.21ZM13.17,14q0-.67.15-1.35l-4-.53-2.45,18,16.32,2.16L23.62,29c-.45-.13-.89-.29-1.32-.46L22,30.83,8.4,29l2.08-15.34ZM38.06,27.58l-1.19.67-1.31-2.31a13.22,13.22,0,0,0,4-17.43,13.51,13.51,0,0,0-18.3-5.09,13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.31,2.32-1.19.66L40,42.08l4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,22,4.59,12.14,12.14,0,0,1,38.41,9.17,11.9,11.9,0,0,1,33.79,25.46ZM22.36,5.74A10.56,10.56,0,0,0,20.74,6.9l14.5,1.92L33.13,24.45l.07,0a10.93,10.93,0,0,0,1.44-1l2-14.78a12.34,12.34,0,0,0-1-1.16ZM17,15.77l11.09,1.47L27,25.76a10.59,10.59,0,0,0,1.38,0l1.31-9.7L17,14.4A10.44,10.44,0,0,0,17,15.77Z" transform="translate(-2.97 -1.71)"></path></svg><h3>カード検索</h3></a>
+
+					</li>
+
+					
+					<li class="menu_cardlist sab_menu">
+						<a class="bg main" href="/yugiohdb/card_list.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1ZM14.73,1.7l-.15,1.77,4.68-1.41ZM37.53,9l-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45Z" transform="translate(-1.82 -1.7)"></path></svg><h3>カードリスト</h3></a>
+						<ul>
+							<li><a href="/yugiohdb/card_list.action?clm=3">公開日の新しい順</a></li>
+							<li><a href="/yugiohdb/card_list.action?clm=1">一般商品</a></li>
+							<li><a href="/yugiohdb/card_list.action?clm=2">特典・同梱系</a></li>
+				
+							<li><a href="/yugiohdb/card_calendar.action">カード誕生日</a></li>
+				
+						</ul>
+					</li>
+
+					
+					<li class="menu_decks">
+						<a href="/yugiohdb/deck_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.78 40.37"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M25.51,37.66l-9.6,1.07V21.24a14.24,14.24,0,0,1-1.37-5.19V28.73L2.74,26.8V13.48l11.78-1.3.26,0c.09-.44.2-.89.33-1.32l-.56-.09L1.37,12.27V28l1.37.22v10l12.12,2,12-1.33V29.43c-.46-.08-.92-.17-1.37-.29Zm-11,1.12L4.11,37.08V28.4l10.43,1.71Zm24.89-11.2-1.19.67-1.31-2.31A13.22,13.22,0,0,0,41,8.51,13.52,13.52,0,0,0,22.66,3.42a13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.32,2.32-1.2.66,6.71,11.84,4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,23.33,4.59,12.14,12.14,0,0,1,39.78,9.17,11.9,11.9,0,0,1,35.16,25.46ZM20.22,9l12.64,2.07L22.22,12.26v11a10.93,10.93,0,0,0,1.37,1V13.47L36.48,12v11a9.86,9.86,0,0,0,1.37-1.45V10.52L21.19,7.79A10.18,10.18,0,0,0,20.22,9Z" transform="translate(-1.37 -1.71)"></path></svg><h3>デッキ検索</h3></a>
+					</li>
+				</ul>
+					
+					<div class="logo"><a href="/yugiohdb/"><h1>遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース</h1></a></div>
+
+				<ul class="main_menu">
+	
+	
+				 
+
+					
+					<li class="my menu_my_decks">
+						<a href="/yugiohdb/member_login.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 35.12"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M23.37,5.39,9.05,7V26l1.37.21v11.9l15.09,2.25,1.37.15,12.34-1.37V7.75ZM25.51,39,11.8,36.94V26.41l13.71,2.05Zm0-29.7v17.8L10.42,24.83V8.19L23.34,6.76,34,8.35ZM37.85,37.92l-11,1.22V10.51l11-1.22Z" transform="translate(-9.05 -5.39)"></path></svg><h3>マイデッキ</h3></a>
+					</li>
+
+					
+					<li class="my menu_my_cardlist">
+						<a href="/yugiohdb/member_login.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45ZM31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1Zm1.7-21-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM14.73,1.7l-.15,1.77,4.68-1.41Z" transform="translate(-1.82 -1.7)"></path></svg><h3>マイカードリスト</h3></a>
+					</li>
+	
+	
+	
+
+				
+
+					
+					<li class="menu_q_a">
+						<a href="/yugiohdb/faq_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.52 35.31"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M34.83,38.3H22.66l-4,1.3-.43-1.3H12.89V27.48l-1.37.44V39.65H36.2V20.9a9.68,9.68,0,0,1-1.37.51ZM15.63,21v6.46h.89l2.21-.72.19-.06a5.85,5.85,0,0,0,.78-.58H17V20.71A7,7,0,0,0,15.63,21Zm-3.58,3.92.84,2.51V22.66A3.5,3.5,0,0,0,12,24.61ZM12.89,5.7H25.57a10.85,10.85,0,0,1,7.91-.63,11.57,11.57,0,0,1,2.73,1.19V4.35H11.52V17.13a10.32,10.32,0,0,1,1.37-.69ZM17,15.51V11.14h4.28l.4-1.35H15.63v5.86A12.87,12.87,0,0,1,17,15.51ZM31.4,16.58l.19.05h.5V10.09l-.1,0c-2-.59-4-.15-4.95,1l0,.1h3.71v5.24Zm-.13,5.24-.1.35-.45,1.5v2.4H30l-.4,1.36h2.48v-5.6Zm3.56-10v3.83a2.41,2.41,0,0,0,.73-1.13A2.9,2.9,0,0,0,34.83,11.83ZM33.11,6.32A8.68,8.68,0,0,0,24,8.63a5.08,5.08,0,0,0-1,1.54l-.39,1.3,2.63.77.39-1.3s0-.26.37-.72a6.12,6.12,0,0,1,6.37-1.45c3.19.93,5.18,3.68,4.45,6.13a4.49,4.49,0,0,1-3.56,2.93,4.3,4.3,0,0,1-2.26.05l-2.63-.77-1.55,5.21,2.63.77.78-2.6,0-.08c4.12.66,8-1.32,9-4.79C40.44,11.81,37.66,7.64,33.11,6.32ZM10.65,24.52c.17-2,1.88-3.95,4.4-4.78,3.16-1,6.37.1,7.19,2.53A4.44,4.44,0,0,1,21,26.69,4.2,4.2,0,0,1,19.16,28l-2.61.85L18.28,34l2.6-.85L20,30.58l0-.08c3.77-1.77,5.84-5.6,4.7-9-1.26-3.77-5.94-5.64-10.45-4.16-3.54,1.16-5.92,4-6.17,7a5.23,5.23,0,0,0,.08,1.82l.43,1.29,2.6-.85-.43-1.29A1.18,1.18,0,0,1,10.65,24.52Zm8.91,13.36L22.17,37l-.86-2.58-2.61.85Zm6.88-14.25-.77,2.6L28.3,27l.78-2.61Z" transform="translate(-8.04 -4.35)"></path></svg><h3>Ｑ＆Ａ</h3></a>
+					</li>
+				
+					
+					<li class="menu_forbidden">
+						<a href="/yugiohdb/forbidden_limited.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 35.32"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M26.09,16v3.57a10.85,10.85,0,0,0,.16-1.8A10.5,10.5,0,0,0,26.09,16Zm0,17.94H18a17,17,0,0,1-5.6,0H4.15V30a17.58,17.58,0,0,1-1.37-1.36v6.67H27.46V28.8a17.2,17.2,0,0,1-1.37,1.33ZM23.35,23.08V13.74L22,15.1v6.62H15.26l-1.37,1.36ZM4.15,1.35H26.09V5.44a14.34,14.34,0,0,1,1.37,1.33V0H2.78V6.93A17.71,17.71,0,0,1,4.15,5.56Zm0,16.83v0ZM8.26,9.25a10.62,10.62,0,0,0-1.38,1.3V22.36L8.26,21Zm6.92,23.58A15,15,0,1,0,0,17.83a15,15,0,0,0,15.19,15Zm12.54-15A12.56,12.56,0,0,1,7.47,27.55L25.06,10.13a12.29,12.29,0,0,1,2.67,7.65ZM15.19,5.37a12.54,12.54,0,0,1,8,2.82L5.5,25.65a12.3,12.3,0,0,1-2.84-7.87A12.47,12.47,0,0,1,15.19,5.37Z" transform="translate(0.01)"></path></svg><h3><span class="type1">リミットレギュレーション</span><span class="type2">リミット<br>レギュレーション</span></h3></a>
+					</li>
+					<li class="menu_btn_pagetop"><a href="#"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.9px" height="27.2px" viewBox="0 0 35.9 27.2" style="enable-background:new 0 0 35.9 27.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M0,20.4v6.8h36v-6.8H0z M18,0L0.1,17.7h35.7L18,0z"></path>
+</svg>
+</a></li>
+
+				</ul><!--#main_menu-->
+
+				</div>
+
+			</nav>
+		</div><!-- #header_menu-->
+	</header>
+	<div id="spnav" style="display: none;">
+		<ul class="main_menu">
+
+	
+	
+			<li class="rogout">
+				
+				<a class="btn hex orn" href="https://my.konami.net/index.html"><span>新規登録</span></a>
+				
+				<a class="btn hex my" href="/yugiohdb/member_login.action"><span>ログイン</span></a>
+			</li>
+	
+	
+	
+		</ul>
+		
+
+
+				<ul class="main_menu">
+					
+					<li class="menu_top"><a href="/yugiohdb/"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.8px" height="33.7px" viewBox="0 0 42.8 33.7" style="enable-background:new 0 0 42.8 33.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M21.4,11.6c-3.9,0-7,3.2-6.9,7.1s3.2,7,7.1,6.9c3.8,0,6.9-3.2,6.9-7C28.5,14.7,25.3,11.6,21.4,11.6
+	C21.5,11.6,21.4,11.6,21.4,11.6z M23.4,0h-3.9L0,18l3.5,3.7l4.5-4.2l3,16.2h20.6l3-16.2l4.5,4.2l3.5-3.8L23.4,0z"></path>
+</svg>
+<h3>Top</h3></a></li>
+
+					
+					<li class="menu_card_search">
+						<a class="main" href="/yugiohdb/card_search.action"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41.81 40.37"><defs><style>.a{fill:url(#a);}</style><linearGradient id="a" x1="2.97" y1="24.1" x2="44.78" y2="24.1" gradientTransform="matrix(1, 0, 0, -1, 0, 46)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path class="a" d="M23.54,39.8l-19-2.53,3.9-28.8,5.92.79A12.89,12.89,0,0,1,15,8l-7.73-1L3,38.44l21.75,2.89,1.6-11.79c-.46-.05-.91-.12-1.36-.21ZM13.17,14q0-.67.15-1.35l-4-.53-2.45,18,16.32,2.16L23.62,29c-.45-.13-.89-.29-1.32-.46L22,30.83,8.4,29l2.08-15.34ZM38.06,27.58l-1.19.67-1.31-2.31a13.22,13.22,0,0,0,4-17.43,13.51,13.51,0,0,0-18.3-5.09,13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.31,2.32-1.19.66L40,42.08l4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,22,4.59,12.14,12.14,0,0,1,38.41,9.17,11.9,11.9,0,0,1,33.79,25.46ZM22.36,5.74A10.56,10.56,0,0,0,20.74,6.9l14.5,1.92L33.13,24.45l.07,0a10.93,10.93,0,0,0,1.44-1l2-14.78a12.34,12.34,0,0,0-1-1.16ZM17,15.77l11.09,1.47L27,25.76a10.59,10.59,0,0,0,1.38,0l1.31-9.7L17,14.4A10.44,10.44,0,0,0,17,15.77Z" transform="translate(-2.97 -1.71)"></path></svg><h3>カード検索</h3></a>
+
+					</li>
+
+					
+					<li class="menu_cardlist sab_menu">
+						<a class="bg main" href="/yugiohdb/card_list.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1ZM14.73,1.7l-.15,1.77,4.68-1.41ZM37.53,9l-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45Z" transform="translate(-1.82 -1.7)"></path></svg><h3>カードリスト</h3></a>
+						<ul>
+							<li><a href="/yugiohdb/card_list.action?clm=3">公開日の新しい順</a></li>
+							<li><a href="/yugiohdb/card_list.action?clm=1">一般商品</a></li>
+							<li><a href="/yugiohdb/card_list.action?clm=2">特典・同梱系</a></li>
+				
+							<li><a href="/yugiohdb/card_calendar.action">カード誕生日</a></li>
+				
+						</ul>
+					</li>
+
+					
+					<li class="menu_decks">
+						<a href="/yugiohdb/deck_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.78 40.37"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M25.51,37.66l-9.6,1.07V21.24a14.24,14.24,0,0,1-1.37-5.19V28.73L2.74,26.8V13.48l11.78-1.3.26,0c.09-.44.2-.89.33-1.32l-.56-.09L1.37,12.27V28l1.37.22v10l12.12,2,12-1.33V29.43c-.46-.08-.92-.17-1.37-.29Zm-11,1.12L4.11,37.08V28.4l10.43,1.71Zm24.89-11.2-1.19.67-1.31-2.31A13.22,13.22,0,0,0,41,8.51,13.52,13.52,0,0,0,22.66,3.42a13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.32,2.32-1.2.66,6.71,11.84,4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,23.33,4.59,12.14,12.14,0,0,1,39.78,9.17,11.9,11.9,0,0,1,35.16,25.46ZM20.22,9l12.64,2.07L22.22,12.26v11a10.93,10.93,0,0,0,1.37,1V13.47L36.48,12v11a9.86,9.86,0,0,0,1.37-1.45V10.52L21.19,7.79A10.18,10.18,0,0,0,20.22,9Z" transform="translate(-1.37 -1.71)"></path></svg><h3>デッキ検索</h3></a>
+					</li>
+				</ul>
+					
+					<div class="logo"><a href="/yugiohdb/"><h1>遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース</h1></a></div>
+
+				<ul class="main_menu">
+	
+	
+				 
+
+					
+					<li class="my menu_my_decks">
+						<a href="/yugiohdb/member_login.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 35.12"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M23.37,5.39,9.05,7V26l1.37.21v11.9l15.09,2.25,1.37.15,12.34-1.37V7.75ZM25.51,39,11.8,36.94V26.41l13.71,2.05Zm0-29.7v17.8L10.42,24.83V8.19L23.34,6.76,34,8.35ZM37.85,37.92l-11,1.22V10.51l11-1.22Z" transform="translate(-9.05 -5.39)"></path></svg><h3>マイデッキ</h3></a>
+					</li>
+
+					
+					<li class="my menu_my_cardlist">
+						<a href="/yugiohdb/member_login.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45ZM31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1Zm1.7-21-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM14.73,1.7l-.15,1.77,4.68-1.41Z" transform="translate(-1.82 -1.7)"></path></svg><h3>マイカードリスト</h3></a>
+					</li>
+	
+	
+	
+
+				
+
+					
+					<li class="menu_q_a">
+						<a href="/yugiohdb/faq_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.52 35.31"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M34.83,38.3H22.66l-4,1.3-.43-1.3H12.89V27.48l-1.37.44V39.65H36.2V20.9a9.68,9.68,0,0,1-1.37.51ZM15.63,21v6.46h.89l2.21-.72.19-.06a5.85,5.85,0,0,0,.78-.58H17V20.71A7,7,0,0,0,15.63,21Zm-3.58,3.92.84,2.51V22.66A3.5,3.5,0,0,0,12,24.61ZM12.89,5.7H25.57a10.85,10.85,0,0,1,7.91-.63,11.57,11.57,0,0,1,2.73,1.19V4.35H11.52V17.13a10.32,10.32,0,0,1,1.37-.69ZM17,15.51V11.14h4.28l.4-1.35H15.63v5.86A12.87,12.87,0,0,1,17,15.51ZM31.4,16.58l.19.05h.5V10.09l-.1,0c-2-.59-4-.15-4.95,1l0,.1h3.71v5.24Zm-.13,5.24-.1.35-.45,1.5v2.4H30l-.4,1.36h2.48v-5.6Zm3.56-10v3.83a2.41,2.41,0,0,0,.73-1.13A2.9,2.9,0,0,0,34.83,11.83ZM33.11,6.32A8.68,8.68,0,0,0,24,8.63a5.08,5.08,0,0,0-1,1.54l-.39,1.3,2.63.77.39-1.3s0-.26.37-.72a6.12,6.12,0,0,1,6.37-1.45c3.19.93,5.18,3.68,4.45,6.13a4.49,4.49,0,0,1-3.56,2.93,4.3,4.3,0,0,1-2.26.05l-2.63-.77-1.55,5.21,2.63.77.78-2.6,0-.08c4.12.66,8-1.32,9-4.79C40.44,11.81,37.66,7.64,33.11,6.32ZM10.65,24.52c.17-2,1.88-3.95,4.4-4.78,3.16-1,6.37.1,7.19,2.53A4.44,4.44,0,0,1,21,26.69,4.2,4.2,0,0,1,19.16,28l-2.61.85L18.28,34l2.6-.85L20,30.58l0-.08c3.77-1.77,5.84-5.6,4.7-9-1.26-3.77-5.94-5.64-10.45-4.16-3.54,1.16-5.92,4-6.17,7a5.23,5.23,0,0,0,.08,1.82l.43,1.29,2.6-.85-.43-1.29A1.18,1.18,0,0,1,10.65,24.52Zm8.91,13.36L22.17,37l-.86-2.58-2.61.85Zm6.88-14.25-.77,2.6L28.3,27l.78-2.61Z" transform="translate(-8.04 -4.35)"></path></svg><h3>Ｑ＆Ａ</h3></a>
+					</li>
+				
+					
+					<li class="menu_forbidden">
+						<a href="/yugiohdb/forbidden_limited.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 35.32"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M26.09,16v3.57a10.85,10.85,0,0,0,.16-1.8A10.5,10.5,0,0,0,26.09,16Zm0,17.94H18a17,17,0,0,1-5.6,0H4.15V30a17.58,17.58,0,0,1-1.37-1.36v6.67H27.46V28.8a17.2,17.2,0,0,1-1.37,1.33ZM23.35,23.08V13.74L22,15.1v6.62H15.26l-1.37,1.36ZM4.15,1.35H26.09V5.44a14.34,14.34,0,0,1,1.37,1.33V0H2.78V6.93A17.71,17.71,0,0,1,4.15,5.56Zm0,16.83v0ZM8.26,9.25a10.62,10.62,0,0,0-1.38,1.3V22.36L8.26,21Zm6.92,23.58A15,15,0,1,0,0,17.83a15,15,0,0,0,15.19,15Zm12.54-15A12.56,12.56,0,0,1,7.47,27.55L25.06,10.13a12.29,12.29,0,0,1,2.67,7.65ZM15.19,5.37a12.54,12.54,0,0,1,8,2.82L5.5,25.65a12.3,12.3,0,0,1-2.84-7.87A12.47,12.47,0,0,1,15.19,5.37Z" transform="translate(0.01)"></path></svg><h3><span class="type1">リミットレギュレーション</span><span class="type2">リミット<br>レギュレーション</span></h3></a>
+					</li>
+					<li class="menu_btn_pagetop"><a href="#"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.9px" height="27.2px" viewBox="0 0 35.9 27.2" style="enable-background:new 0 0 35.9 27.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M0,20.4v6.8h36v-6.8H0z M18,0L0.1,17.7h35.7L18,0z"></path>
+</svg>
+</a></li>
+
+				</ul><!--#main_menu-->
+
+		<div class="close"><span>✕</span>閉じる</div>
+	</div>
+	<div id="bg">
+
+
+
+	<nav id="pan_nav"><div>
+		<ul>
+			<li><a href="/yugiohdb/">ホーム</a></li><!--
+		 --><li>»</li><!--
+
+		 --><li><a href="/yugiohdb/card_list.action">カードリスト</a></li><!--
+		 --><li>»</li><!--
+		 --><li class="oneline">Vol.1</li>
+
+
+		</ul>
+		<div class="btn hex orn"><span>?</span></div>
+	</div></nav><!--#pan_nav-->
+
+
+
+
+
+	
+
+	 
+		<nav id="title_msg">
+			<span>遊戯王OCG「Vol.1」のカード一覧です。<br>カードを選択するとより詳細な遊戯王OCG公式ルールを確認する事ができます。</span>
+		</nav>
+	
+
+
+
+
+
+
+		<header id="broad_title">
+			<div>
+				<h1><strong><ruby><rb>Vol.</rb><rt>ボリューム</rt></ruby>1</strong></h1>
+
+				<p id="previewed">
+					(
+		
+			
+			
+						公開日 :
+			
+						1999年02月04日
+			
+	
+	
+					)
+				</p>
+
+			</div>
+		</header>
+
+
+
+
+<div id="main980">
+	<article>
+		<div id="article_body">
+
+
+
+
+<!--シェア追加-->
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!--シェア追加-->
+	<div class="sns_btn">
+		<div class="sns">
+			
+			<iframe src="//platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja&amp;lang=ja&amp;count=horizontal&amp;hashtags=YugiohDB_JP" scrolling="no" style="border:none; overflow:hidden; width:100px; height:20px;" allowtransparency="true" frameborder="0"></iframe>
+
+			
+			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;locale=ja_JP" scrolling="no" style="border:none; overflow:hidden; width:100px; height:20px;" allowtransparency="true" frameborder="0"></iframe>
+
+			
+			<div class="fb-share-button fb_iframe_widget" data-href="http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=1&amp;sess=1&amp;stype=1&amp;othercon=2&amp;rp=99999&amp;page=1&amp;request_locale=ja" data-layout="button_count" data-size="small" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;size=small"><span style="vertical-align: bottom; width: 108px; height: 20px;"><iframe name="f394c57acb89fb6" data-testid="fb:share_button Facebook Social Plugin" title="fb:share_button Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 108px; height: 20px;" src="https://www.facebook.com/v2.9/plugins/share_button.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df16641e467cb896%26domain%3Dwww.db.yugioh-card.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.db.yugioh-card.com%252Ff305a74625e9fce%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja&amp;layout=button_count&amp;locale=ja_JP&amp;sdk=joey&amp;size=small" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+
+			
+			<iframe data-lang="ja" data-type="share-a" data-url="http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=1&amp;sess=1&amp;stype=1&amp;othercon=2&amp;rp=99999&amp;page=1&amp;request_locale=ja" data-line-it-id="0" scrolling="no" allowtransparency="true" style="width: 83px; height: 20px; visibility: visible; position: static !important; opacity: 1 !important;" class="line-it-button" src="https://social-plugins.line.me/widget/share?url=http%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26stype%3D1%26othercon%3D2%26rp%3D99999%26page%3D1%26request_locale%3Dja&amp;buttonType=share-a&amp;lang=ja&amp;type=share&amp;id=0&amp;origin=https%3A%2F%2Fwww.db.yugioh-card.com%2Fyugiohdb%2Fcard_search.action%3Fope%3D1%26sess%3D1%26pid%3D1101000%26rp%3D99999&amp;title=Vol.1%20%7C%20%E3%82%AB%E3%83%BC%E3%83%89%E6%A4%9C%E7%B4%A2%E7%B5%90%E6%9E%9C%EF%BC%88%E7%94%BB%E5%83%8F%E8%A1%A8%E7%A4%BA%EF%BC%89%20%7C%20%E9%81%8A%E6%88%AF%E7%8E%8B%20%E3%82%AA%E3%83%95%E3%82%A3%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0%20%E3%83%87%E3%83%A5%E3%82%A8%E3%83%AB%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA%20-%20%E3%82%AB%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9&amp;env=REAL" title="このページの情報をLINEでシェアできます。" frameborder="0"></iframe>
+			<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="sort_set">
+		<div class="text">
+
+	
+				全40枚
+	
+
+
+		</div>
+
+
+
+		<div class="pulldown">
+	
+			<input type="hidden" id="rp" value="99999">
+
+			<span>
+				<select id="sort" name="sort">
+					<option value="1">カードナンバー順</option>
+					<option value="2">50音順</option>
+					<option value="3">レベル／ランク順（大きい順）</option>
+					<option value="4">レベル／ランク順（小さい順）</option>
+					<option value="5">攻撃力順（大きい順）</option>
+					<option value="6">攻撃力順（小さい順）</option>
+					<option value="7">守備力順（大きい順）</option>
+					<option value="8">守備力順（小さい順）</option>
+					<option value="9">ペンデュラムスケール順（大きい順）</option>
+					<option value="10">ペンデュラムスケール順（小さい順）</option>
+					<option value="11">リンク数（多い順）</option>
+					<option value="12">リンク数（少ない順）</option>
+					<option value="20">発売日(古い順)</option>
+					<option value="21">発売日(新しい順)</option>
+				</select>
+			</span>
+
+	
+	
+		</div>
+	</div>
+
+
+
+
+
+		<div id="mode_set" class="tablink">
+				<ul>
+					<li class="1 now"><span>画像表示</span></li>
+					<li class="2"><span>テキスト表示</span></li>
+				</ul>
+				<select id="mode" name="mode">
+					<option value="1">画像表示</option>
+					<option value="2">テキスト表示</option>
+				</select>
+		</div>
+
+
+
+
+
+
+
+
+
+			<div id="card_list" class="list">
+
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_0_1" alt="サイクロプス" title="サイクロプス" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4009&amp;ciid=1&amp;enc=0CoTPLoT9T5vYevmPPEIVw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">サイクロプス</span>
+									<span class="card_name">サイクロプス</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4009">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 4</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										獣戦士族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 1200</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 1000
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									一つ目の巨人。太い腕で殴りかかってくる。要注意。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="サイクロプス">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4009">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_1_1" alt="ブラック・マジシャン" title="ブラック・マジシャン" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4041&amp;ciid=1&amp;enc=Bq8Eng_-TFl8cWEum1rpdw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ブラック・マジシャン</span>
+									<span class="card_name">ブラック・マジシャン</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_4" style="background-color:#cfa15e;color:#cfa15e">
+										<p>UR</p>
+										<span style="background-color:#fff8ee;border-color:#cfa15e;color:#cfa15e; ">
+												ウルトラレア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4041">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 7</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										魔法使い族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 2500</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 2100
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									魔法使いとしては、攻撃力・守備力ともに最高クラス。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ブラック・マジシャン">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4041">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_2_1" alt="暗黒騎士ガイア" title="暗黒騎士ガイア" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4044&amp;ciid=1&amp;enc=gcAVxqWH8Pmf7O2WyTpN3A">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">あんこくきしガイア</span>
+									<span class="card_name">暗黒騎士ガイア</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_4" style="background-color:#cfa15e;color:#cfa15e">
+										<p>UR</p>
+										<span style="background-color:#fff8ee;border-color:#cfa15e;color:#cfa15e; ">
+												ウルトラレア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4044">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 7</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										戦士族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 2300</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 2100
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									風よりも速く走る馬に乗った騎士。突進攻撃に注意。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="暗黒騎士ガイア">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4044">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_3_1" alt="マンモスの墓場" title="マンモスの墓場" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4065&amp;ciid=1&amp;enc=RdXXykm3XpWb0kdBLLrsdQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">マンモスのはかば</span>
+									<span class="card_name">マンモスの墓場</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4065">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										恐竜族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 1200</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 800
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									仲間のお墓を守るマンモス。墓荒らしを容赦なく攻撃。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="マンモスの墓場">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4065">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_4_1" alt="シルバー・フォング" title="シルバー・フォング" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4071&amp;ciid=1&amp;enc=Awzq09xKAEF6IVNf1d6Jxw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">シルバー・フォング</span>
+									<span class="card_name">シルバー・フォング</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4071">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										獣族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 1200</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 800
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									白銀に輝くオオカミ。見た目は美しいが、性格は凶暴。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="シルバー・フォング">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4071">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_5_1" alt="黒魔族のカーテン" title="黒魔族のカーテン" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4110&amp;ciid=1&amp;enc=Eg4K3tlV9ZGK_1hbFgex8A">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">くろまぞくのカーテン</span>
+									<span class="card_name">黒魔族のカーテン</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4110">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										魔法使い族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 500
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									魔術師がつくりだしたカーテン。魔法使いの力が上がるという。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="黒魔族のカーテン">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4110">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_6_1" alt="トモザウルス" title="トモザウルス" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4111&amp;ciid=1&amp;enc=Yoh7S1jeJzT_48-ce5-6_g">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">トモザウルス</span>
+									<span class="card_name">トモザウルス</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4111">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										恐竜族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 500</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 400
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									小さいが性格は凶暴。仲間同士で争いだす。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="トモザウルス">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4111">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_7_1" alt="ダーク・グレイ" title="ダーク・グレイ" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4119&amp;ciid=1&amp;enc=q7NwJlOwa7N9NHGu5Cjf5g">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ダーク・グレイ</span>
+									<span class="card_name">ダーク・グレイ</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4119">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										獣族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 800</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 900
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									からだが灰色のけもの。あまり見かけない貴重ないきもの。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ダーク・グレイ">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4119">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_8_1" alt="眠り子" title="眠り子" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4135&amp;ciid=1&amp;enc=Hc3rr1ATnu8WYqrAMGs-pw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ねむりこ</span>
+									<span class="card_name">眠り子</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4135">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										魔法使い族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 800</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 700
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									子供だが睡魔をあやつり二度と覚めることのない眠りを誘う。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="眠り子">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4135">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_9_1" alt="死者の腕" title="死者の腕" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4141&amp;ciid=1&amp;enc=5lSWqWQHcCr-GKUcFEiiFw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ししゃのうで</span>
+									<span class="card_name">死者の腕</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4141">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										アンデット族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									混沌の沼から腕をのばし、生ける者を中へと引きずり込む。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="死者の腕">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4141">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_10_1" alt="ファイヤー・デビル" title="ファイヤー・デビル" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4160&amp;ciid=1&amp;enc=EpylVyTscUZ2NGUP7BkZYg">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ファイヤー・デビル</span>
+									<span class="card_name">ファイヤー・デビル</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4160">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										アンデット族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 500
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									炎の矢を手にする死神。その矢にあたると火だるまになる。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ファイヤー・デビル">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4160">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_11_1" alt="火炎草" title="火炎草" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4163&amp;ciid=1&amp;enc=9DTWZnKnF57i5AWg4m1vvQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">かえんそう</span>
+									<span class="card_name">火炎草</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4163">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										植物族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									火山の近くに生息する草。花から火炎を吹き攻撃する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="火炎草">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4163">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_12_1" alt="コピックス" title="コピックス" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4191&amp;ciid=1&amp;enc=palxxqYMzyiIdIaIQKOwWw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">コピックス</span>
+									<span class="card_name">コピックス</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4191">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										戦士族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 500
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									いろんな奴に変身して、相手をだましながら戦う戦士。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="コピックス">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4191">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_13_1" alt="ララ・ライウーン" title="ララ・ライウーン" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4197&amp;ciid=1&amp;enc=iI92-CRFr3l0o14yNjOjAA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ララ・ライウーン</span>
+									<span class="card_name">ララ・ライウーン</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4197">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_wind.png" alt="風属性" title="風属性" style="position: relative;">
+										<span>風属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										雷族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									電気を帯びた雲形のモンスター。何でも溶かす危険な雨を降らせる。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ララ・ライウーン">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4197">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_14_1" alt="プチリュウ" title="プチリュウ" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4206&amp;ciid=1&amp;enc=oGMyBLx7q18-XKWsoO8Ipw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">プチリュウ</span>
+									<span class="card_name">プチリュウ</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4206">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_wind.png" alt="風属性" title="風属性" style="position: relative;">
+										<span>風属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										ドラゴン族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 700
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									とても小さなドラゴン。小さなからだをいっぱいに使い攻撃する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="プチリュウ">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4206">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_15_1" alt="デーモン・ビーバー" title="デーモン・ビーバー" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4208&amp;ciid=1&amp;enc=qSSlu9swS_9C_FuxakD1aw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">デーモン・ビーバー</span>
+									<span class="card_name">デーモン・ビーバー</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4208">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										獣族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 400</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									悪魔のツノと翼を持つビーバー。どんぐりを投げつけて攻撃する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="デーモン・ビーバー">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4208">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_16_1" alt="プチテンシ" title="プチテンシ" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4214&amp;ciid=1&amp;enc=SEWyvCkOlgpLLlkmv1N34g">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">プチテンシ</span>
+									<span class="card_name">プチテンシ</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4214">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_light.png" alt="光属性" title="光属性" style="position: relative;">
+										<span>光属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										天使族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 900
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									ちょこまか動き攻撃がなかなか当たらない、とても小さな天使。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="プチテンシ">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4214">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_17_1" alt="ダークキラー" title="ダークキラー" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4215&amp;ciid=1&amp;enc=rEuO3-KQ0CsHFDcxc1d1zQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ダークキラー</span>
+									<span class="card_name">ダークキラー</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4215">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										昆虫族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 700
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									カマのように発達した腕を振り回し攻撃してくる。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ダークキラー">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4215">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_18_1" alt="サンダー・キッズ" title="サンダー・キッズ" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4217&amp;ciid=1&amp;enc=8C8kPZ1QtvwaPerEJEvaHA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">サンダー・キッズ</span>
+									<span class="card_name">サンダー・キッズ</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4217">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_wind.png" alt="風属性" title="風属性" style="position: relative;">
+										<span>風属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										雷族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									雷をからだの中に蓄電させている。泣かせたときは危険。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="サンダー・キッズ">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4217">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_19_1" alt="バビロン" title="バビロン" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4218&amp;ciid=1&amp;enc=ONulCg3eWMz_BElylVBQ4g">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">バビロン</span>
+									<span class="card_name">バビロン</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4218">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										獣族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									一つ目の巨大な怪物。目玉からビームを発射して攻撃する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="バビロン">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4218">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_20_1" alt="紫炎の影武者" title="紫炎の影武者" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4220&amp;ciid=1&amp;enc=Jz5K8_S5o5KJ5SRFvq3ZIQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">シエンのかげむしゃ</span>
+									<span class="card_name">紫炎の影武者</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4220">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										戦士族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 800</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 400
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									シエンに仕える影武者。鋭い切れ味の名刀を持つ。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="紫炎の影武者">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4220">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_21_1" alt="ヒトデンチャク" title="ヒトデンチャク" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4233&amp;ciid=1&amp;enc=4l1ga_mBglhLLglo6TjsVw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ヒトデンチャク</span>
+									<span class="card_name">ヒトデンチャク</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4233">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_water.png" alt="水属性" title="水属性" style="position: relative;">
+										<span>水属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										水族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 700
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									汚染された水で狂暴化したヒトデ。口から溶解液をはく。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ヒトデンチャク">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4233">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_22_1" alt="命の砂時計" title="命の砂時計" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4235&amp;ciid=1&amp;enc=upnsByvzomasI16ka2vOYg">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">いのちのすなどけい</span>
+									<span class="card_name">命の砂時計</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4235">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_light.png" alt="光属性" title="光属性" style="position: relative;">
+										<span>光属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										天使族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									命を司る天使。命を短くするかわりに力を与える。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="命の砂時計">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4235">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_23_1" alt="はにわ" title="はにわ" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4243&amp;ciid=1&amp;enc=iWWYxdQByfc6JAAdXaA0Ag">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">はにわ</span>
+									<span class="card_name">はにわ</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4243">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_earth.png" alt="地属性" title="地属性" style="position: relative;">
+										<span>地属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										岩石族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 500</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 500
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									古代王の墓の中にある宝物を守る土人形。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="はにわ">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4243">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_24_1" alt="デス・フット" title="デス・フット" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4246&amp;ciid=1&amp;enc=w-UckrF5JRjjZTNbPrqNBQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">デス・フット</span>
+									<span class="card_name">デス・フット</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4246">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										悪魔族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 800
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									目玉に足の生えた化け物。高くジャンプしてかぎづめで攻撃する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="デス・フット">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4246">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_25_1" alt="運命のろうそく" title="運命のろうそく" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4248&amp;ciid=1&amp;enc=eaEE4Wk5Z4oSmu7WPw3nlA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">うんめいのろうそく</span>
+									<span class="card_name">運命のろうそく</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4248">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										悪魔族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 600</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									指先の炎が消えたとき、相手の運命が決定する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="運命のろうそく">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4248">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_26_1" alt="悪魔の鏡" title="悪魔の鏡" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4267&amp;ciid=1&amp;enc=fwVMS5TUN8icxAdPljrtAA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">デーモンズ・ミラー</span>
+									<span class="card_name">悪魔の鏡</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4267">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										悪魔族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 600
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									鏡に映るものに催眠術をかけ攻撃をよける悪魔の鏡。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="悪魔の鏡">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4267">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_27_1" alt="怒りの海王" title="怒りの海王" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4271&amp;ciid=1&amp;enc=bEjaUhhvxwug8Rm-8yFHOA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">いかりのかいおう</span>
+									<span class="card_name">怒りの海王</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4271">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_water.png" alt="水属性" title="水属性" style="position: relative;">
+										<span>水属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										水族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 800</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 700
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									偉大な海の王。終わることのない大津波を呼び、敵をのみこむ。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="怒りの海王">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4271">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_28_1" alt="闇にしたがう者" title="闇にしたがう者" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4274&amp;ciid=1&amp;enc=0ZoLn9ctdL1auzMtivSUbA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">やみにしたがうもの</span>
+									<span class="card_name">闇にしたがう者</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4274">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_dark.png" alt="闇属性" title="闇属性" style="position: relative;">
+										<span>闇属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 2</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										魔法使い族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 700</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 500
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									闇を崇拝する魔法使い。魔の手を呼び出し暗闇へ引きずり込む。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="闇にしたがう者">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4274">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_29_1" alt="ドレイク" title="ドレイク" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4306&amp;ciid=1&amp;enc=rTqyToPmBSCzgPEloNtCSA">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ドレイク</span>
+									<span class="card_name">ドレイク</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4306">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_wind.png" alt="風属性" title="風属性" style="position: relative;">
+										<span>風属性</span>
+									</span>
+		
+		
+
+		
+		
+			
+			
+									<span class="box_card_level_rank level">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/icon_level.png" alt="レベル" title="レベル" style="position: relative;">
+										<span>レベル 3</span>
+									</span>
+			
+		
+
+		
+									<span class="card_info_species_and_other_item"><span>
+										【
+										鳥獣族
+			
+										／
+										通常
+			
+			
+			
+										】
+									</span></span>
+
+									<span class="atk_power">
+										<span>攻撃力 800</span>
+									</span>
+
+
+									<span class="def_power"><span>
+			
+			
+										守備力 800
+			
+									</span></span>
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									しっぽが長い鳥。そのしっぽで空中から攻撃する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ドレイク">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4306">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_30_1" alt="伝説の剣" title="伝説の剣" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4307&amp;ciid=1&amp;enc=y23qHw5GAf5XemUaVzP6bQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">でんせつのけん</span>
+									<span class="card_name">伝説の剣</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_2" style="background-color:#81c67f;color:#81c67f">
+										<p>R</p>
+										<span style="background-color:#f6fff6;border-color:#81c67f;color:#81c67f; ">
+												レア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4307">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+									<span class="box_card_effect">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/effect/effect_icon_equip.png" alt="装備" title="装備" style="position: relative;">
+										<span>装備</span>
+
+										
+									</span>
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									戦士族のみ装備可能。装備モンスター１体の攻撃力と守備力は３００ポイントアップする。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="伝説の剣">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4307">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_31_1" alt="猛獣の歯" title="猛獣の歯" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4314&amp;ciid=1&amp;enc=ls7Aed9J3NL-RMcZXL98Gg">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">もうじゅうのは</span>
+									<span class="card_name">猛獣の歯</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_2" style="background-color:#81c67f;color:#81c67f">
+										<p>R</p>
+										<span style="background-color:#f6fff6;border-color:#81c67f;color:#81c67f; ">
+												レア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4314">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+									<span class="box_card_effect">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/effect/effect_icon_equip.png" alt="装備" title="装備" style="position: relative;">
+										<span>装備</span>
+
+										
+									</span>
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									獣族のみ装備可能。装備モンスター１体の攻撃力と守備力は３００ポイントアップする。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="猛獣の歯">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4314">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_32_1" alt="紫水晶" title="紫水晶" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4328&amp;ciid=1&amp;enc=l0xBijUQSGvRnHS80N6AnQ">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">むらさきすいしょう</span>
+									<span class="card_name">紫水晶</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_2" style="background-color:#81c67f;color:#81c67f">
+										<p>R</p>
+										<span style="background-color:#f6fff6;border-color:#81c67f;color:#81c67f; ">
+												レア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4328">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+									<span class="box_card_effect">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/effect/effect_icon_equip.png" alt="装備" title="装備" style="position: relative;">
+										<span>装備</span>
+
+										
+									</span>
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									アンデット族のみ装備可能。装備モンスター１体の攻撃力と守備力は３００ポイントアップする。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="紫水晶">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4328">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_33_1" alt="秘術の書" title="秘術の書" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4329&amp;ciid=1&amp;enc=IZuyMMLE4hCCOXQMGKtgOw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ひじゅつのしょ</span>
+									<span class="card_name">秘術の書</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_2" style="background-color:#81c67f;color:#81c67f">
+										<p>R</p>
+										<span style="background-color:#f6fff6;border-color:#81c67f;color:#81c67f; ">
+												レア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4329">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+									<span class="box_card_effect">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/effect/effect_icon_equip.png" alt="装備" title="装備" style="position: relative;">
+										<span>装備</span>
+
+										
+									</span>
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									魔法使い族モンスターにのみ装備可能。装備モンスターの攻撃力・守備力は３００ポイントアップする。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="秘術の書">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4329">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_34_1" alt="ポセイドンの力" title="ポセイドンの力" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4334&amp;ciid=1&amp;enc=OBlL7uhh3R3TS1NmLovG_w">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ポセイドンのちから</span>
+									<span class="card_name">ポセイドンの力</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_2" style="background-color:#81c67f;color:#81c67f">
+										<p>R</p>
+										<span style="background-color:#f6fff6;border-color:#81c67f;color:#81c67f; ">
+												レア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4334">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+									<span class="box_card_effect">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/effect/effect_icon_equip.png" alt="装備" title="装備" style="position: relative;">
+										<span>装備</span>
+
+										
+									</span>
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									水族のみ装備可能。装備モンスター１体の攻撃力と守備力は３００ポイントアップする。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ポセイドンの力">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4334">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_35_1" alt="ブラック・ホール" title="ブラック・ホール" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4342&amp;ciid=1&amp;enc=swxbopKDM2q5ZlRjatRuaw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ブラック・ホール</span>
+									<span class="card_name">ブラック・ホール</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_3" style="background-color:#6aa1cf;color:#6aa1cf">
+										<p>SR</p>
+										<span style="background-color:#e9f5ff;border-color:#6aa1cf;color:#6aa1cf; ">
+												スーパーレア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4342">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									①：フィールドのモンスターを全て破壊する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="ブラック・ホール">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4342">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_36_1" alt="レッド・ポーション" title="レッド・ポーション" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4345&amp;ciid=1&amp;enc=mP11HY8E7DvHtgwJjoAD-A">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">レッド・ポーション</span>
+									<span class="card_name">レッド・ポーション</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4345">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									自分は５００ライフポイント回復する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="レッド・ポーション">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4345">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_37_1" alt="火の粉" title="火の粉" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4349&amp;ciid=1&amp;enc=690IyKhxV20mAl3Yd-_-rw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">ひのこ</span>
+									<span class="card_name">火の粉</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4349">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									相手ライフに２００ポイントダメージを与える。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="火の粉">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4349">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_38_1" alt="地割れ" title="地割れ" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4835&amp;ciid=1&amp;enc=Vl0PfBZKgOVDdaGH6N_LDw">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">じわれ</span>
+									<span class="card_name">地割れ</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_3" style="background-color:#6aa1cf;color:#6aa1cf">
+										<p>SR</p>
+										<span style="background-color:#e9f5ff;border-color:#6aa1cf;color:#6aa1cf; ">
+												スーパーレア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4835">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_spell.png" alt="魔法" title="魔法" style="position: relative;">
+										<span>魔法</span>
+									</span>
+		
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									①：相手フィールドの攻撃力が一番低いモンスター１体を破壊する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="地割れ">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4835">
+						</div><!-- .t_row c_normal -->
+
+	
+		
+
+
+						<div class="t_row c_normal">
+
+							<div class="box_card_img">
+		
+		
+								<img id="card_image_39_1" alt="落とし穴" title="落とし穴" class="none ui-draggable ui-draggable-handle" style="position: relative; display: inline;" src="/yugiohdb/get_image.action?type=1&amp;osplang=1&amp;cid=4836&amp;ciid=1&amp;enc=Bi0DupNPw3Sf5ieiKdoM9A">
+		
+
+
+							</div>
+							<dl class="flex_1">
+								<dd class="box_card_name flex_1 top_set">
+									<span class="card_ruby">おとしあな</span>
+									<span class="card_name">落とし穴</span>
+
+								</dd>
+
+
+								<dd class="icon top_set top_b_none">
+		
+		
+			
+				
+									<div class="lr_icon rid rid_3" style="background-color:#6aa1cf;color:#6aa1cf">
+										<p>SR</p>
+										<span style="background-color:#e9f5ff;border-color:#6aa1cf;color:#6aa1cf; ">
+												スーパーレア仕様
+										</span>
+									</div>
+			
+		
+								</dd>
+
+
+								<dd class="remove_btn top_set">
+									<a href="javascript:void(0);" class="btn hex red" title="このカードをリストから削除">
+										<span>X</span>
+										<input type="hidden" class="lang" value="">
+										<input type="hidden" class="cid" value="4836">
+									</a>
+								</dd>
+								<dd class="box_card_spec flex_1">
+		
+									<span class="box_card_attribute">
+										<img class="icon_img ui-draggable ui-draggable-handle" src="external/image/parts/attribute/attribute_icon_trap.png" alt="罠" title="罠" style="position: relative;">
+										<span>罠</span>
+									</span>
+		
+		
+
+		
+		
+
+		
+
+								</dd>
+		
+		
+								<dd class="box_card_text c_text flex_1">
+									①：相手が攻撃力１０００以上のモンスターの召喚・反転召喚に成功した時、そのモンスター１体を対象として発動できる。その攻撃力１０００以上のモンスターを破壊する。
+								</dd>
+		
+		
+
+
+
+
+
+							</dl>
+								<input type="hidden" class="cnm" value="落とし穴">
+								<input type="hidden" class="fltype" value="">
+							<input type="hidden" class="link_value" value="/yugiohdb/card_search.action?ope=2&amp;cid=4836">
+						</div><!-- .t_row c_normal -->
+
+	
+			</div><!-- #card_list.list -->
+
+
+
+
+
+
+
+
+
+
+		</div><!--#article_body-->
+	</article>
+
+<input type="hidden" name="sv" value="ycdb-prdap01.gs-ec2">
+
+
+
+
+
+
+	</div><!--#bg--></div><!--#main980-->
+
+	
+
+	
+		<nav id="title_top_msg" class="nav_home"><div class="in_bg">
+			<div class="title_btn">
+				<span class="title">遊戯王 OCG デュエルモンスターズ カードデータベースとは</span>
+				<div class="batu"><span>∧</span></div>
+			</div>
+			<div class="in">
+				<div class="in_btn">
+					<p>遊戯王 オフィシャルカードゲーム デュエルモンスターズの公式サイトです。<br>全ての遊戯王OCGカードを検索したり、詳細なルールや禁止・制限カードを参照する事ができます。<br>また、自分が持っているカードやデッキをマイデッキに登録して管理したり、公開されているデッキレシピを検索して自分のデッキ構築の参考にする事ができます。</p>
+					<a class="btn" href="https://www.yugioh-card.com/japan/howto/" target="_blank">
+						<img src="external/image/ja/logo_ocgtcg.png" style="position: relative;" class="ui-draggable ui-draggable-handle">
+						<span>遊び方はこちら</span>
+					</a>
+				</div>
+
+
+				<div id="nav_bottom">
+					
+					<a class="top_main_card_search" href="/yugiohdb/card_search.action">
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41.81 40.37"><defs><style>.a{fill:url(#a);}</style><linearGradient id="a" x1="2.97" y1="24.1" x2="44.78" y2="24.1" gradientTransform="matrix(1, 0, 0, -1, 0, 46)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path class="a" d="M23.54,39.8l-19-2.53,3.9-28.8,5.92.79A12.89,12.89,0,0,1,15,8l-7.73-1L3,38.44l21.75,2.89,1.6-11.79c-.46-.05-.91-.12-1.36-.21ZM13.17,14q0-.67.15-1.35l-4-.53-2.45,18,16.32,2.16L23.62,29c-.45-.13-.89-.29-1.32-.46L22,30.83,8.4,29l2.08-15.34ZM38.06,27.58l-1.19.67-1.31-2.31a13.22,13.22,0,0,0,4-17.43,13.51,13.51,0,0,0-18.3-5.09,13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.31,2.32-1.19.66L40,42.08l4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,22,4.59,12.14,12.14,0,0,1,38.41,9.17,11.9,11.9,0,0,1,33.79,25.46ZM22.36,5.74A10.56,10.56,0,0,0,20.74,6.9l14.5,1.92L33.13,24.45l.07,0a10.93,10.93,0,0,0,1.44-1l2-14.78a12.34,12.34,0,0,0-1-1.16ZM17,15.77l11.09,1.47L27,25.76a10.59,10.59,0,0,0,1.38,0l1.31-9.7L17,14.4A10.44,10.44,0,0,0,17,15.77Z" transform="translate(-2.97 -1.71)"></path></svg></span>
+							<h3>カード検索</h3>
+						</div>
+						<div class="tex_bottom">
+							遊戯王OCGの全てのカードを検索することができます。カードの詳細画面から、そのカードを使用したデッキ検索をすることができます。公開日よりカード検索ができるようになります。
+						</div>
+					</a>
+
+					
+					<a class="top_main_cardlist" href="/yugiohdb/card_list.action">
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1ZM14.73,1.7l-.15,1.77,4.68-1.41ZM37.53,9l-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45Z" transform="translate(-1.82 -1.7)"></path></svg></span>
+							<h3>カードリスト</h3>
+						</div>
+						<div class="tex_bottom">
+							遊戯王OCGカードを、収録べつ(商品/特典など)に閲覧することができます。<br>商品の公開日より最新情報として掲載しています。
+						</div>
+					</a>
+
+					
+					<a class="top_main_decks" href="/yugiohdb/deck_search.action">
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.78 40.37"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M25.51,37.66l-9.6,1.07V21.24a14.24,14.24,0,0,1-1.37-5.19V28.73L2.74,26.8V13.48l11.78-1.3.26,0c.09-.44.2-.89.33-1.32l-.56-.09L1.37,12.27V28l1.37.22v10l12.12,2,12-1.33V29.43c-.46-.08-.92-.17-1.37-.29Zm-11,1.12L4.11,37.08V28.4l10.43,1.71Zm24.89-11.2-1.19.67-1.31-2.31A13.22,13.22,0,0,0,41,8.51,13.52,13.52,0,0,0,22.66,3.42a13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.32,2.32-1.2.66,6.71,11.84,4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,23.33,4.59,12.14,12.14,0,0,1,39.78,9.17,11.9,11.9,0,0,1,35.16,25.46ZM20.22,9l12.64,2.07L22.22,12.26v11a10.93,10.93,0,0,0,1.37,1V13.47L36.48,12v11a9.86,9.86,0,0,0,1.37-1.45V10.52L21.19,7.79A10.18,10.18,0,0,0,20.22,9Z" transform="translate(-1.37 -1.71)"></path></svg></span>
+							<h3>デッキ検索</h3>
+						</div>
+						<div class="tex_bottom">
+							公開されているデッキを検索することができます。<br>大会優勝デッキ/大会入賞デッキの検索や、特定カードを使用しているデッキの検索ができます。
+						</div>
+					</a>
+
+					
+						
+						
+					<a class="top_main_my menu_my_decks" href="/yugiohdb/member_login.action">
+						
+						
+						
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 35.12"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M23.37,5.39,9.05,7V26l1.37.21v11.9l15.09,2.25,1.37.15,12.34-1.37V7.75ZM25.51,39,11.8,36.94V26.41l13.71,2.05Zm0-29.7v17.8L10.42,24.83V8.19L23.34,6.76,34,8.35ZM37.85,37.92l-11,1.22V10.51l11-1.22Z" transform="translate(-9.05 -5.39)"></path></svg></span>
+							<h3>マイデッキ</h3>
+
+						</div>
+						<div class="tex_bottom">
+							デッキレシピの登録や登録したデッキを他のユーザに公開できます(ハーフデッキやデュエルリンクスのデッキも登録できます)。自分のデッキやカードの管理の使用にもおすすめの機能です。
+						</div>
+					</a>
+
+					
+						
+						
+					<a class="top_main_my my_cardlist" href="/yugiohdb/member_login.action">
+						
+						
+						
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45ZM31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1Zm1.7-21-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM14.73,1.7l-.15,1.77,4.68-1.41Z" transform="translate(-1.82 -1.7)"></path></svg></span>
+							<h3>マイカードリスト</h3>
+						</div>
+						<div class="tex_bottom">
+							自分の持っているカードや欲しいカードをリストとして管理することができます。ログイン後にカード詳細画面から追加できます。
+						</div>
+					</a>
+
+
+
+				
+
+					
+					<a class="top_main_q_a" href="/yugiohdb/faq_search.action">
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.52 35.31"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M34.83,38.3H22.66l-4,1.3-.43-1.3H12.89V27.48l-1.37.44V39.65H36.2V20.9a9.68,9.68,0,0,1-1.37.51ZM15.63,21v6.46h.89l2.21-.72.19-.06a5.85,5.85,0,0,0,.78-.58H17V20.71A7,7,0,0,0,15.63,21Zm-3.58,3.92.84,2.51V22.66A3.5,3.5,0,0,0,12,24.61ZM12.89,5.7H25.57a10.85,10.85,0,0,1,7.91-.63,11.57,11.57,0,0,1,2.73,1.19V4.35H11.52V17.13a10.32,10.32,0,0,1,1.37-.69ZM17,15.51V11.14h4.28l.4-1.35H15.63v5.86A12.87,12.87,0,0,1,17,15.51ZM31.4,16.58l.19.05h.5V10.09l-.1,0c-2-.59-4-.15-4.95,1l0,.1h3.71v5.24Zm-.13,5.24-.1.35-.45,1.5v2.4H30l-.4,1.36h2.48v-5.6Zm3.56-10v3.83a2.41,2.41,0,0,0,.73-1.13A2.9,2.9,0,0,0,34.83,11.83ZM33.11,6.32A8.68,8.68,0,0,0,24,8.63a5.08,5.08,0,0,0-1,1.54l-.39,1.3,2.63.77.39-1.3s0-.26.37-.72a6.12,6.12,0,0,1,6.37-1.45c3.19.93,5.18,3.68,4.45,6.13a4.49,4.49,0,0,1-3.56,2.93,4.3,4.3,0,0,1-2.26.05l-2.63-.77-1.55,5.21,2.63.77.78-2.6,0-.08c4.12.66,8-1.32,9-4.79C40.44,11.81,37.66,7.64,33.11,6.32ZM10.65,24.52c.17-2,1.88-3.95,4.4-4.78,3.16-1,6.37.1,7.19,2.53A4.44,4.44,0,0,1,21,26.69,4.2,4.2,0,0,1,19.16,28l-2.61.85L18.28,34l2.6-.85L20,30.58l0-.08c3.77-1.77,5.84-5.6,4.7-9-1.26-3.77-5.94-5.64-10.45-4.16-3.54,1.16-5.92,4-6.17,7a5.23,5.23,0,0,0,.08,1.82l.43,1.29,2.6-.85-.43-1.29A1.18,1.18,0,0,1,10.65,24.52Zm8.91,13.36L22.17,37l-.86-2.58-2.61.85Zm6.88-14.25-.77,2.6L28.3,27l.78-2.61Z" transform="translate(-8.04 -4.35)"></path></svg></span>
+							<h3>Ｑ＆Ａ</h3>
+
+						</div>
+						<div class="tex_bottom">
+							遊戯王カードゲーム事務局によせられた質問と回答をカード名などで検索ができます。最新カードのルール等も随時更新しています。
+						</div>
+					</a>
+				
+					
+					<a class="top_main_forbidden" href="/yugiohdb/forbidden_limited.action">
+						<div class="tex_top">
+							<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 35.32"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M26.09,16v3.57a10.85,10.85,0,0,0,.16-1.8A10.5,10.5,0,0,0,26.09,16Zm0,17.94H18a17,17,0,0,1-5.6,0H4.15V30a17.58,17.58,0,0,1-1.37-1.36v6.67H27.46V28.8a17.2,17.2,0,0,1-1.37,1.33ZM23.35,23.08V13.74L22,15.1v6.62H15.26l-1.37,1.36ZM4.15,1.35H26.09V5.44a14.34,14.34,0,0,1,1.37,1.33V0H2.78V6.93A17.71,17.71,0,0,1,4.15,5.56Zm0,16.83v0ZM8.26,9.25a10.62,10.62,0,0,0-1.38,1.3V22.36L8.26,21Zm6.92,23.58A15,15,0,1,0,0,17.83a15,15,0,0,0,15.19,15Zm12.54-15A12.56,12.56,0,0,1,7.47,27.55L25.06,10.13a12.29,12.29,0,0,1,2.67,7.65ZM15.19,5.37a12.54,12.54,0,0,1,8,2.82L5.5,25.65a12.3,12.3,0,0,1-2.84-7.87A12.47,12.47,0,0,1,15.19,5.37Z" transform="translate(0.01)"></path></svg></span>
+							<h3>
+								<span>リミットレギュレーション</span>
+							</h3>
+
+						</div>
+						<div class="tex_bottom">
+							公式大会で使用が禁止されている禁止カードや枚数制限がある制限カード・準制限カードをまとめたリストです。
+							<span class="history">2021.07.01 更新</span>
+						</div>
+					</a>
+
+				</div>
+			</div>
+
+
+
+		</div></nav>
+	
+	<footer id="footer">
+		<div id="content_copyright">©スタジオ・ダイス／集英社・テレビ東京・KONAMI</div>
+
+		<div id="cdb_link_set"><a class="link_ocg" href="//www.yugioh-card.com/japan/" target="_blank">遊戯王公式サイト</a> <a class="link_neuron" href="//www.konami.com/yugioh/neuron/ja/" target="_blank">遊戯王ニューロン</a> <a class="link_cgn" href="//cardgame-network.konami.net/" target="_blank">KONAMI CARD GAME NETWORK</a> <a class="link_kst" href="http://www.konamistyle.jp/" target="_blank">コナミスタイル</a> <a class="link_kfs" href="https://www.konami.com/games/card/friendly_shop/" target="_blank">コナミ フレンドリーショップ</a> <a class="link_rushdb" href="https://www.db.yugioh-card.com/rushdb/" target="_blank">遊戯王ラッシュデュエルカードデータベース</a> </div>
+		<div id="footer_menu">
+			
+
+
+				<ul class="main_menu">
+					
+					<li class="menu_top"><a href="/yugiohdb/"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.8px" height="33.7px" viewBox="0 0 42.8 33.7" style="enable-background:new 0 0 42.8 33.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M21.4,11.6c-3.9,0-7,3.2-6.9,7.1s3.2,7,7.1,6.9c3.8,0,6.9-3.2,6.9-7C28.5,14.7,25.3,11.6,21.4,11.6
+	C21.5,11.6,21.4,11.6,21.4,11.6z M23.4,0h-3.9L0,18l3.5,3.7l4.5-4.2l3,16.2h20.6l3-16.2l4.5,4.2l3.5-3.8L23.4,0z"></path>
+</svg>
+<h3>Top</h3></a></li>
+
+					
+					<li class="menu_card_search">
+						<a class="main" href="/yugiohdb/card_search.action"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 41.81 40.37"><defs><style>.a{fill:url(#a);}</style><linearGradient id="a" x1="2.97" y1="24.1" x2="44.78" y2="24.1" gradientTransform="matrix(1, 0, 0, -1, 0, 46)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path class="a" d="M23.54,39.8l-19-2.53,3.9-28.8,5.92.79A12.89,12.89,0,0,1,15,8l-7.73-1L3,38.44l21.75,2.89,1.6-11.79c-.46-.05-.91-.12-1.36-.21ZM13.17,14q0-.67.15-1.35l-4-.53-2.45,18,16.32,2.16L23.62,29c-.45-.13-.89-.29-1.32-.46L22,30.83,8.4,29l2.08-15.34ZM38.06,27.58l-1.19.67-1.31-2.31a13.22,13.22,0,0,0,4-17.43,13.51,13.51,0,0,0-18.3-5.09,13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.31,2.32-1.19.66L40,42.08l4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,22,4.59,12.14,12.14,0,0,1,38.41,9.17,11.9,11.9,0,0,1,33.79,25.46ZM22.36,5.74A10.56,10.56,0,0,0,20.74,6.9l14.5,1.92L33.13,24.45l.07,0a10.93,10.93,0,0,0,1.44-1l2-14.78a12.34,12.34,0,0,0-1-1.16ZM17,15.77l11.09,1.47L27,25.76a10.59,10.59,0,0,0,1.38,0l1.31-9.7L17,14.4A10.44,10.44,0,0,0,17,15.77Z" transform="translate(-2.97 -1.71)"></path></svg><h3>カード検索</h3></a>
+
+					</li>
+
+					
+					<li class="menu_cardlist sab_menu">
+						<a class="bg main" href="/yugiohdb/card_list.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1ZM14.73,1.7l-.15,1.77,4.68-1.41ZM37.53,9l-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45Z" transform="translate(-1.82 -1.7)"></path></svg><h3>カードリスト</h3></a>
+						<ul>
+							<li><a href="/yugiohdb/card_list.action?clm=3">公開日の新しい順</a></li>
+							<li><a href="/yugiohdb/card_list.action?clm=1">一般商品</a></li>
+							<li><a href="/yugiohdb/card_list.action?clm=2">特典・同梱系</a></li>
+				
+							<li><a href="/yugiohdb/card_calendar.action">カード誕生日</a></li>
+				
+						</ul>
+					</li>
+
+					
+					<li class="menu_decks">
+						<a href="/yugiohdb/deck_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.78 40.37"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M25.51,37.66l-9.6,1.07V21.24a14.24,14.24,0,0,1-1.37-5.19V28.73L2.74,26.8V13.48l11.78-1.3.26,0c.09-.44.2-.89.33-1.32l-.56-.09L1.37,12.27V28l1.37.22v10l12.12,2,12-1.33V29.43c-.46-.08-.92-.17-1.37-.29Zm-11,1.12L4.11,37.08V28.4l10.43,1.71Zm24.89-11.2-1.19.67-1.31-2.31A13.22,13.22,0,0,0,41,8.51,13.52,13.52,0,0,0,22.66,3.42a13.25,13.25,0,0,0-5.14,18.12,13.51,13.51,0,0,0,17,5.72l1.32,2.32-1.2.66,6.71,11.84,4.79-2.66Zm-4.27-2.12a12.14,12.14,0,0,1-16.45-4.58A11.9,11.9,0,0,1,23.33,4.59,12.14,12.14,0,0,1,39.78,9.17,11.9,11.9,0,0,1,35.16,25.46ZM20.22,9l12.64,2.07L22.22,12.26v11a10.93,10.93,0,0,0,1.37,1V13.47L36.48,12v11a9.86,9.86,0,0,0,1.37-1.45V10.52L21.19,7.79A10.18,10.18,0,0,0,20.22,9Z" transform="translate(-1.37 -1.71)"></path></svg><h3>デッキ検索</h3></a>
+					</li>
+				</ul>
+					
+					<div class="logo"><a href="/yugiohdb/"><h1>遊戯王 オフィシャルカードゲーム デュエルモンスターズ - カードデータベース</h1></a></div>
+
+				<ul class="main_menu">
+	
+	
+				 
+
+					
+					<li class="my menu_my_decks">
+						<a href="/yugiohdb/member_login.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 35.12"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M23.37,5.39,9.05,7V26l1.37.21v11.9l15.09,2.25,1.37.15,12.34-1.37V7.75ZM25.51,39,11.8,36.94V26.41l13.71,2.05Zm0-29.7v17.8L10.42,24.83V8.19L23.34,6.76,34,8.35ZM37.85,37.92l-11,1.22V10.51l11-1.22Z" transform="translate(-9.05 -5.39)"></path></svg><h3>マイデッキ</h3></a>
+					</li>
+
+					
+					<li class="my menu_my_cardlist">
+						<a href="/yugiohdb/member_login.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.26 40.22"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M22.81,2.41l-21,6.35L11.2,39.15l21-6.35ZM3.54,9.66,21.9,4.1l8.58,27.79L12.12,37.45ZM31.59,26.2l.41,0L33.47,8.1l-7.66-.61.43,1.39L32,9.34l-1.17,14.4ZM35.12,4.69,33,30.8l.89,2.9-3.68,1.11,3.81.31L36.6,3.44l-12.34-1,.43,1.4Zm.71,25.25-.22,2.65.72.23L42,15.49,37.12,14,37,15.34l3.23,1Zm1.7-21-.11,1.39,6.94,2.21-9,27.66-11.2-3.57-2.3.7,14.38,4.58,9.84-30.25ZM21.63,7.88,5.89,12.64,11.26,30,27,25.28Zm-14,5.66,13.12-4,4.57,14.81-13.12,4ZM14.73,1.7l-.15,1.77,4.68-1.41Z" transform="translate(-1.82 -1.7)"></path></svg><h3>マイカードリスト</h3></a>
+					</li>
+	
+	
+	
+
+				
+
+					
+					<li class="menu_q_a">
+						<a href="/yugiohdb/faq_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.52 35.31"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M34.83,38.3H22.66l-4,1.3-.43-1.3H12.89V27.48l-1.37.44V39.65H36.2V20.9a9.68,9.68,0,0,1-1.37.51ZM15.63,21v6.46h.89l2.21-.72.19-.06a5.85,5.85,0,0,0,.78-.58H17V20.71A7,7,0,0,0,15.63,21Zm-3.58,3.92.84,2.51V22.66A3.5,3.5,0,0,0,12,24.61ZM12.89,5.7H25.57a10.85,10.85,0,0,1,7.91-.63,11.57,11.57,0,0,1,2.73,1.19V4.35H11.52V17.13a10.32,10.32,0,0,1,1.37-.69ZM17,15.51V11.14h4.28l.4-1.35H15.63v5.86A12.87,12.87,0,0,1,17,15.51ZM31.4,16.58l.19.05h.5V10.09l-.1,0c-2-.59-4-.15-4.95,1l0,.1h3.71v5.24Zm-.13,5.24-.1.35-.45,1.5v2.4H30l-.4,1.36h2.48v-5.6Zm3.56-10v3.83a2.41,2.41,0,0,0,.73-1.13A2.9,2.9,0,0,0,34.83,11.83ZM33.11,6.32A8.68,8.68,0,0,0,24,8.63a5.08,5.08,0,0,0-1,1.54l-.39,1.3,2.63.77.39-1.3s0-.26.37-.72a6.12,6.12,0,0,1,6.37-1.45c3.19.93,5.18,3.68,4.45,6.13a4.49,4.49,0,0,1-3.56,2.93,4.3,4.3,0,0,1-2.26.05l-2.63-.77-1.55,5.21,2.63.77.78-2.6,0-.08c4.12.66,8-1.32,9-4.79C40.44,11.81,37.66,7.64,33.11,6.32ZM10.65,24.52c.17-2,1.88-3.95,4.4-4.78,3.16-1,6.37.1,7.19,2.53A4.44,4.44,0,0,1,21,26.69,4.2,4.2,0,0,1,19.16,28l-2.61.85L18.28,34l2.6-.85L20,30.58l0-.08c3.77-1.77,5.84-5.6,4.7-9-1.26-3.77-5.94-5.64-10.45-4.16-3.54,1.16-5.92,4-6.17,7a5.23,5.23,0,0,0,.08,1.82l.43,1.29,2.6-.85-.43-1.29A1.18,1.18,0,0,1,10.65,24.52Zm8.91,13.36L22.17,37l-.86-2.58-2.61.85Zm6.88-14.25-.77,2.6L28.3,27l.78-2.61Z" transform="translate(-8.04 -4.35)"></path></svg><h3>Ｑ＆Ａ</h3></a>
+					</li>
+				
+					
+					<li class="menu_forbidden">
+						<a href="/yugiohdb/forbidden_limited.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 35.32"><defs><style>.a{fill:#fff;fill-rule:evenodd;}</style></defs><path class="a" d="M26.09,16v3.57a10.85,10.85,0,0,0,.16-1.8A10.5,10.5,0,0,0,26.09,16Zm0,17.94H18a17,17,0,0,1-5.6,0H4.15V30a17.58,17.58,0,0,1-1.37-1.36v6.67H27.46V28.8a17.2,17.2,0,0,1-1.37,1.33ZM23.35,23.08V13.74L22,15.1v6.62H15.26l-1.37,1.36ZM4.15,1.35H26.09V5.44a14.34,14.34,0,0,1,1.37,1.33V0H2.78V6.93A17.71,17.71,0,0,1,4.15,5.56Zm0,16.83v0ZM8.26,9.25a10.62,10.62,0,0,0-1.38,1.3V22.36L8.26,21Zm6.92,23.58A15,15,0,1,0,0,17.83a15,15,0,0,0,15.19,15Zm12.54-15A12.56,12.56,0,0,1,7.47,27.55L25.06,10.13a12.29,12.29,0,0,1,2.67,7.65ZM15.19,5.37a12.54,12.54,0,0,1,8,2.82L5.5,25.65a12.3,12.3,0,0,1-2.84-7.87A12.47,12.47,0,0,1,15.19,5.37Z" transform="translate(0.01)"></path></svg><h3><span class="type1">リミットレギュレーション</span><span class="type2">リミット<br>レギュレーション</span></h3></a>
+					</li>
+					<li class="menu_btn_pagetop"><a href="#"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.9px" height="27.2px" viewBox="0 0 35.9 27.2" style="enable-background:new 0 0 35.9 27.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M0,20.4v6.8h36v-6.8H0z M18,0L0.1,17.7h35.7L18,0z"></path>
+</svg>
+</a></li>
+
+				</ul><!--#main_menu-->
+
+		</div>
+		<div id="footer_meta">
+			<nav>
+				<ul>
+					<li><a href="http://www.yugioh-card.com/japan/support/" target="_blank">お問い合わせ</a></li>
+					<li><a href="https://www.konami.com/siteinfo/ja/" target="_blank">サイトポリシー</a></li>
+					<li><a href="https://legal.konami.com/games/privacy/ja/" target="_blank">個人情報等保護方針</a></li>
+				
+				</ul>
+			</nav>
+			<small>©2022 Konami Digital Entertainment</small>
+
+		</div>
+	</footer>
+	<nav id="footer_icon">
+		<div>
+				<ul class="main_menu">
+					
+					<li class="menu_top"><a href="/yugiohdb/"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.8px" height="33.7px" viewBox="0 0 42.8 33.7" style="enable-background:new 0 0 42.8 33.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M21.4,11.6c-3.9,0-7,3.2-6.9,7.1s3.2,7,7.1,6.9c3.8,0,6.9-3.2,6.9-7C28.5,14.7,25.3,11.6,21.4,11.6
+	C21.5,11.6,21.4,11.6,21.4,11.6z M23.4,0h-3.9L0,18l3.5,3.7l4.5-4.2l3,16.2h20.6l3-16.2l4.5,4.2l3.5-3.8L23.4,0z"></path>
+</svg>
+<h3>Top</h3></a></li>
+
+					
+					<li class="menu_card_search">
+						<a class="main" href="/yugiohdb/card_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.35 28.26"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M13.44,23.3,2.21,21.64,3.93,10l3.52.52a11.1,11.1,0,0,1,.63-3.12l-5-.74-3,20.27,14,2.06,1.08-7.32a12.7,12.7,0,0,1-1.33-.53Zm-1.76-14,5.14.76-1.11,7.48a6.7,6.7,0,0,0,1.69.5L19.12,6.39,14,5.63a7,7,0,0,0-2.37,3.69ZM26.17,20l-.66.4L24.66,19a10,10,0,1,0-2.23,1.3l.85,1.44-.67.4,4.25,7.2,3.57-2.11Zm-3.73-2.21A7.82,7.82,0,1,1,25.2,7.1a7.83,7.83,0,0,1-2.76,10.71Z" transform="translate(-0.08 -1.07)"></path></svg><h3>カード検索</h3></a>
+
+					</li>
+
+					
+					<li class="menu_cardlist sab_menu">
+						<a class="bg main" href="/yugiohdb/card_list.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.07 29.79"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M128.74,4.57l-1.11,13.66-1-.08,1.63,5.31-3.2,1,3.66.3,1.94-23.71L121.15.28l1.17,3.79ZM120.44,0,104.77,4.79l7,22.75,15.67-4.8Zm-9.06,21-4-13.11L120,4l4,13.1ZM131.13,5l-.31,3.78,4.33,1.43-4.3,13-1.18-.39-.25,3.06-7.08-.58-2.89.88,10.93,3.61,7.46-22.58Z" transform="translate(-104.77)"></path></svg><h3>カードリスト</h3></a>
+					</li>
+
+					
+					<li class="menu_decks">
+						<a href="/yugiohdb/deck_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.46 28.79"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M452,16.6a11,11,0,0,1-1.39-7.34l-1.65.26V29l8.35-1.73V21.19A10.91,10.91,0,0,1,452,16.6ZM451.16,7l-4.78-.4-8.07,1-.18.61V19l10.09,1.74V9.52l.38-.73,2.12-.32A9.87,9.87,0,0,1,451.16,7ZM439,27.26,448.22,29V21.17L439,19.6Zm30.21-7.13-.69.4-.85-1.45a10.22,10.22,0,1,0-2.23,1.33l.86,1.46-.68.41L470,29.61l3.64-2.14Zm-3.77-2.27a8,8,0,1,1,2.78-11l0,.06A8,8,0,0,1,465.44,17.86Zm1-12-9.12-.75a7.16,7.16,0,0,0-2.07,9.51.83.83,0,0,1,.08.12V8.51l.51-1,10.67-1.63ZM456.25,15.92a7.14,7.14,0,0,0,10.09.27,7,7,0,0,0,.85-1V6.8L456.25,8.51Z" transform="translate(-438.13 -0.82)"></path></svg><h3>デッキ検索</h3></a>
+					</li>
+
+
+
+				
+
+					
+					<li class="menu_q_a">
+						<a href="/yugiohdb/faq_search.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.73 27.45"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M370.6,22.79A1.66,1.66,0,1,0,369,21.12v0A1.65,1.65,0,0,0,370.6,22.79Zm-10.11-5.65a1,1,0,0,0,.75-.63,1.82,1.82,0,0,0,.09-.8,2,2,0,0,1,0-.59,2.8,2.8,0,0,1,.2-.62,2.88,2.88,0,0,1,3.08-1.37,3.8,3.8,0,0,1,1.5.85,3.47,3.47,0,0,1,1,1.87,2,2,0,0,1,0,.69,3.28,3.28,0,0,1-.21.86A5.07,5.07,0,0,1,365,19.07c-.28.18-1,.52-1.11.81s.11.68.22.93l.95,2.1c.09.21.27.8.61.74a1.57,1.57,0,0,0,.54-.29c.18-.13.48-.25.57-.46a.6.6,0,0,0,0-.49,2.71,2.71,0,0,0-.21-.37c-.13-.21-.25-.42-.37-.63s-.3-.37-.15-.59a2.13,2.13,0,0,1,.65-.42l.42-.29a4.71,4.71,0,0,0,1.6-1.91,6.46,6.46,0,0,0,.36-1.21,4.79,4.79,0,0,0-.44-3,5.11,5.11,0,0,0-3.53-2.49,8.79,8.79,0,0,0-1.14-.11h-.58a10.28,10.28,0,0,0-1.08.21,4.51,4.51,0,0,0-2.93,2.87c-.28.72-.55,2,.12,2.46a1,1,0,0,0,.94.19Zm1.19-11.25H369l.09-.14a4.42,4.42,0,0,1,1.07-1,6.55,6.55,0,0,1,6.18-.87,6.31,6.31,0,0,1,2.37,1.57V1.76H360.21v10.4a4.46,4.46,0,0,1,1.47-1Zm17.9,2.2a6,6,0,0,0-6-4,5.86,5.86,0,0,0-3.45,1.41,3.37,3.37,0,0,0-.69.67,1.62,1.62,0,0,0-.3,1.57,1.21,1.21,0,0,0,.83.66c1.13.29,1.51-.82,2-1.39a2.14,2.14,0,0,1,.58-.46,2.75,2.75,0,0,1,.79-.33,3.64,3.64,0,0,1,4.29,3.19,3.87,3.87,0,0,1-.06,1.44,3.19,3.19,0,0,1-1.89,2.43,7.33,7.33,0,0,1-3.42.12,1.09,1.09,0,0,0-1.09.27,4.34,4.34,0,0,0-.27,1.13l-.51,2.53c-.11.47-.22.91.29,1h.62c1.29.21,1-.77,1.15-1.7.07-.4-.05-.73.28-.87a2,2,0,0,1,.9,0,5,5,0,0,0,1.44,0,7.09,7.09,0,0,0,1.21-.28A5.71,5.71,0,0,0,379,13.35,7.49,7.49,0,0,0,379.58,8.09ZM365.72,25.43A1.47,1.47,0,1,0,367.19,24a1.47,1.47,0,0,0-1.47,1.48Zm11.47-3.29h-4.6a2.22,2.22,0,0,1-4,0h-1.24a3.25,3.25,0,0,1,.11.42,1.26,1.26,0,0,1-.13.63,1.22,1.22,0,0,1-.2.25h0a2,2,0,1,1-2,2,2,2,0,0,1,.42-1.24.93.93,0,0,1-.29-.05c-.4-.13-.6-.64-.76-1l-.45-1h-2.44V16.91a1.65,1.65,0,0,1-1.47.87V29.21H378.6V14.76a5,5,0,0,1-1.47,1.06Z" transform="translate(-359.09 -1.76)"></path></svg><h3>Ｑ＆Ａ</h3></a>
+					</li>
+				
+					
+					<li class="menu_forbidden">
+						<a href="/yugiohdb/forbidden_limited.action"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.28 27.73"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M243.27,11.32v8.13A8.61,8.61,0,0,0,243.27,11.32Zm-7.69,12.75a8.69,8.69,0,0,0,5.69-2.13h-8.89l-1,1a8.61,8.61,0,0,0,4.2,1.13Zm7.12-20a10.13,10.13,0,0,1,1,.72h0c.33.26.65.53,1,.82h0c.16.15.3.31.46.47V1.71h-19.1V6A13.33,13.33,0,0,1,242.7,4.07ZM227.87,19.42h0V11.33a8.67,8.67,0,0,0,0,8.13Zm.18,7a13.32,13.32,0,0,1-2-1.67v4.64h19.1V24.71A13.38,13.38,0,0,1,228,26.43ZM235.58,28A12.64,12.64,0,1,0,222.94,15.4h0A12.66,12.66,0,0,0,235.58,28Zm9.63-12.64A9.65,9.65,0,0,1,235.58,25a9.52,9.52,0,0,1-5.46-1.71L243.23,9.56a9.57,9.57,0,0,1,2,5.8Zm-9.63-9.69a9.65,9.65,0,0,1,5.47,1.71L227.93,21.17a9.63,9.63,0,0,1,7.65-15.46Z" transform="translate(-222.94 -1.71)"></path></svg><h3><span class="type1">リミットレギュレーション</span><span class="type2">リミット<br>レギュレーション</span></h3></a>
+					</li>
+					<li class="menu_btn_pagetop"><a href="#"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.9px" height="27.2px" viewBox="0 0 35.9 27.2" style="enable-background:new 0 0 35.9 27.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+</style>
+<path class="st0" d="M0,20.4v6.8h36v-6.8H0z M18,0L0.1,17.7h35.7L18,0z"></path>
+</svg>
+</a></li>
+
+				</ul><!--#main_menu-->
+		</div>
+	</nav>
+</div><!--wrapper-->
+<noscript>JavaScript を有効にしてください</noscript>
+
+
+
+
+<script type="text/javascript" id="">var domain=document.domain,trackDomain=google_tag_manager["GTM-PWR3GWF"].macro(2),nonTrackDomain=google_tag_manager["GTM-PWR3GWF"].macro(3),aoValue=google_tag_manager["GTM-PWR3GWF"].macro(4),edgescapeValue=google_tag_manager["GTM-PWR3GWF"].macro(5),agCookieValue=google_tag_manager["GTM-PWR3GWF"].macro(6);if(-1!=trackDomain.indexOf(domain)||"2"==aoValue||"2"==edgescapeValue||"3"==edgescapeValue&&"2"==agCookieValue){var expireDate=new Date;expireDate.setDate(expireDate.getDate()+28);document.cookie="Analytics\x3d2; secure\x3dtrue; expires\x3d"+expireDate.toGMTString()}
+-1!=nonTrackDomain.indexOf(domain)&&(document.cookie="Analytics\x3d; max-age\x3d0");</script><script type="text/javascript" id="">var analyticsValue=google_tag_manager["GTM-PWR3GWF"].macro(7);"2"!=analyticsValue?window["ga-disable-UA-97638476-6"]=!0:window["ga-disable-UA-97638476-6"]=!1;</script><script type="text/javascript" id="" src="https://www.konami.com/games/s/common/js/privacy_information.js"></script><div id="topcontrol" style="position: fixed; bottom: 5px; right: 5px; opacity: 1; cursor: pointer;" title="Scroll Back to Top"><img src="external/image/parts/to_top_btn.png" style="width:38px; height:39px"></div></body></html>

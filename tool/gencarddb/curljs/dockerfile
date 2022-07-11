@@ -1,0 +1,13 @@
+FROM python:3.8-alpine
+
+# ChromeDriver
+RUN apk add chromium chromium-chromedriver
+
+# flask
+COPY app/requirements.txt ./
+RUN pip install -r requirements.txt
+COPY ./app /app
+ENV FLASK_APP='/app/run.py'
+
+EXPOSE 80
+CMD ["python", "-u", "-m", "flask", "run", "--host", "0.0.0.0", "--port", "80"]
