@@ -7,9 +7,10 @@ import { CardRow } from './CardRow'
 
 interface Props {
   cards: YugiohCard[]
+  limit: (name: string) => number
 }
 export const CardsDom = (props: Props) => {
-  const {cards} = props
+  const {cards, limit} = props
   const maxItemPerPage = 30
 
   const [page, setPage] = React.useState(0)
@@ -37,7 +38,7 @@ export const CardsDom = (props: Props) => {
 
       {props.cards.slice(maxItemPerPage * page, maxItemPerPage * page + maxItemPerPage).map((card, index) => (
         <div key={index} className="p-2">
-          <CardRow card={card} />
+          <CardRow card={card} limit={limit} />
         </div>
       ))}
 

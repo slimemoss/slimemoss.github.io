@@ -4,23 +4,41 @@ import { FiExternalLink } from 'react-icons/fi'
 
 import { YugiohCard } from '../card_info/useYugiohCard'
 import { yugiohCardColor } from '../card_info/color'
-import { limit02 } from '../card_info/env02'
 
-interface Props {
-  card: YugiohCard
+interface LimitBadgeProps {
+  name: string
+  limit: (name: string) => number
 }
+const LimitBadge = (props: LimitBadgeProps) => {
+  const limit = props.limit(props.name)
 
-const LimitBadge = (props: {name: string}) => {
-  const limit = limit02(props.name)
+  const str = (limit: number): string => {
+    switch(limit) {
+      case 0:
+        return '禁止'
+      case 1:
+        return '制限'
+      case 2:
+        return '準制限'
+      default:
+    }
+    return ''
+  }
+
   return (
     <Badge bg="danger" hidden={limit == 3}>
-      {limit == 1 ? '制限' : '準制限'}
+      {str(limit)}
     </Badge>
   )
 }
 
+interface Props {
+  card: YugiohCard
+  limit: (name: string) => number
+}
+
 export const CardRow = (props: Props) => {
-  const {card} = props
+  const {card, limit} = props
 
   return (
     <>
@@ -32,7 +50,7 @@ export const CardRow = (props: Props) => {
                style={{fontSize: '1.2em'}}>
             {card.name}
           </div>
-          <LimitBadge name={card.name} />
+          <LimitBadge name={card.name} limit={limit} />
           <div style={{marginLeft: 'auto'}}>
             <a href={card.url} target='_blank'>公式<FiExternalLink/></a>
           </div>
