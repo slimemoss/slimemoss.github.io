@@ -1,21 +1,25 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { Route, BrowserRouter, Switch } from 'react-router-dom'
-import { Header } from './header'
+
+import {Tab, Tabs} from 'react-bootstrap'
+
 import { CardSearch02Page } from './card_search/CardSearch02'
 import { CardSearch05Page } from './card_search/CardSearch02'
 
 ReactDOM.render(
   <>
-    <Header/>
-    <BrowserRouter>
-      <Switch>
-        <Route exact path='/' component={CardSearch02Page} />
-        <Route exact path='/search02' component={CardSearch02Page} />
-        <Route exact path='/search05' component={CardSearch05Page} />
-        <CardSearch02Page/>
-      </Switch>
-    </BrowserRouter>
+    <Tabs
+      defaultActiveKey="s02"
+      id="tab"
+      className="mb-3"
+    >
+      <Tab eventKey="s02" title="02環境">
+        <CardSearch02Page />
+      </Tab>
+      <Tab eventKey="s05" title="05環境">
+        <CardSearch05Page />
+      </Tab>
+    </Tabs>
   </>,
   document.getElementById('app')
 )
